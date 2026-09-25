@@ -1,0 +1,127 @@
+[
+  {
+    "label": "VEF₁/CVF 0,62, VEF₁ 65%, mMRC 1, sem exacerbações: GOLD 2, grupo A",
+    "input": {
+      "rel": 0.62,
+      "vef1": 65,
+      "mmrc": "1",
+      "exac": 0,
+      "intern": 0
+    },
+    "expected": {
+      "raw": {
+        "gold": 2,
+        "grupo": "A"
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "rel": 0.62,
+      "vef1": 65,
+      "mmrc": "1",
+      "exac": 0,
+      "intern": 0
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "VEF₁ 80% (limite): GOLD 1",
+    "input": {
+      "rel": 0.68,
+      "vef1": 80,
+      "mmrc": "0",
+      "exac": 0,
+      "intern": 0
+    },
+    "expected": {
+      "raw": {
+        "gold": 1,
+        "grupo": "A"
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "rel": 0.68,
+      "vef1": 80,
+      "mmrc": "0",
+      "exac": 0,
+      "intern": 0
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "VEF₁ 45%, mMRC 3, 1 exacerbação: GOLD 3, grupo B",
+    "input": {
+      "rel": 0.55,
+      "vef1": 45,
+      "mmrc": "3",
+      "exac": 1,
+      "intern": 0
+    },
+    "expected": {
+      "raw": {
+        "gold": 3,
+        "grupo": "B"
+      },
+      "level": "mid"
+    },
+    "originalInput": {
+      "rel": 0.55,
+      "vef1": 45,
+      "mmrc": "3",
+      "exac": 1,
+      "intern": 0
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "VEF₁ 28%, mMRC 2, 1 internação: GOLD 4, grupo E",
+    "input": {
+      "rel": 0.45,
+      "vef1": 28,
+      "mmrc": "2",
+      "exac": 0,
+      "intern": 1
+    },
+    "expected": {
+      "raw": {
+        "gold": 4,
+        "grupo": "E"
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "rel": 0.45,
+      "vef1": 28,
+      "mmrc": "2",
+      "exac": 0,
+      "intern": 1
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "VEF₁/CVF 0,72: sem obstrução",
+    "input": {
+      "rel": 0.72,
+      "vef1": 85,
+      "mmrc": "1",
+      "exac": 0,
+      "intern": 0
+    },
+    "expected": {
+      "raw": {
+        "gold": 0
+      },
+      "level": "low",
+      "verdict": "não confirma"
+    },
+    "originalInput": {
+      "rel": 0.72,
+      "vef1": 85,
+      "mmrc": "1",
+      "exac": 0,
+      "intern": 0
+    },
+    "expandedZeroOptions": []
+  }
+]
