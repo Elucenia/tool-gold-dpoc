@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-gold-dpoc",
   "version": "0.1.0",
-  "description": "Classificação GOLD da DPOC · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Classificação GOLD da DPOC · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
