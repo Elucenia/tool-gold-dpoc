@@ -1,0 +1,1978 @@
+{
+  "schema": "elucenia-gold-prior-mmrc-grade-presentation-v1",
+  "recordedAt": "2026-10-05T16:18:30.707Z",
+  "scope": "GOLD presentation only; no questionnaire administered",
+  "stage": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc",
+  "locales": [
+    "pt-BR",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ar",
+    "zh",
+    "ja",
+    "hi"
+  ],
+  "input": {
+    "name": "mmrc",
+    "kind": "sel",
+    "values": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "questionnaireAdministered": false,
+    "sourceDescriptorsIncluded": false
+  },
+  "sourceEvidence": [
+    {
+      "url": "https://www.ukri.org/councils/mrc/facilities-and-resources/find-an-mrc-facility-or-resource/mrc-dyspnoea-scale/",
+      "finding": "Original-scale reuse grant does not authorize modified scale versions or translations; no such grant is claimed."
+    },
+    {
+      "url": "https://goldcopd.org/legal-policy/",
+      "finding": "GOLD website reproduction remains separately restricted; this package supplies own numerical code and no report artifacts."
+    }
+  ],
+  "helper": {
+    "file": "apps/website/translations/tools/gold-prior-mmrc-grade-authored.cjs",
+    "sha256": "82cd74358580da057e3a1d0f1029a9a2ab298c6420558b737e672a743ff2413d"
+  },
+  "changes": [
+    {
+      "file": "apps/dashboard/private/localization/pt-BR.json",
+      "beforeSha256": "b8224b387647187af0b1eb1bdbd80f0c687fcd32d52d0a61cc5d05a3a74db1d7",
+      "afterSha256": "1aab8bebd36114489a943b395fa61a2a5b8f349739eca584279bd3acb0ca721a",
+      "bytesBefore": 13597070,
+      "bytesAfter": 21779629
+    },
+    {
+      "file": "apps/dashboard/private/localization/en.json",
+      "beforeSha256": "4fa993a8d063385fd1f85c0cdb99d00387aebe4fa112d641d9a59079f545c7f0",
+      "afterSha256": "74bc0201d2cd165cb4c9676c3c73790926e2f15a22a9ee1fc1165b4706695baf",
+      "bytesBefore": 13677166,
+      "bytesAfter": 21957772
+    },
+    {
+      "file": "apps/dashboard/private/localization/es.json",
+      "beforeSha256": "6b28194da2a7383877438a7d66b640d0aafe01c427279009083b4e683067e7b4",
+      "afterSha256": "b4fdd7f46ca9745067a655d2d8022483c359accfd120e907cb960d0fa1ffff70",
+      "bytesBefore": 13722803,
+      "bytesAfter": 22003358
+    },
+    {
+      "file": "apps/dashboard/private/localization/fr.json",
+      "beforeSha256": "3052b49a6e4ae60ed361a5470c241820f541488e5d4972f331d1dd610bf7b689",
+      "afterSha256": "d51f634a63bae53b0c2196bee331abceb83533a406fb76c41f53e7d9835181cc",
+      "bytesBefore": 13770183,
+      "bytesAfter": 22050736
+    },
+    {
+      "file": "apps/dashboard/private/localization/de.json",
+      "beforeSha256": "5a01859f7ed6f12c0aed30acf2416fac8522e4727bfe032afd726d024c6cc472",
+      "afterSha256": "1429da86b4be23013822337ab876da9e1afd250bbf68da84f952d0413e4314af",
+      "bytesBefore": 13744310,
+      "bytesAfter": 22024930
+    },
+    {
+      "file": "apps/dashboard/private/localization/it.json",
+      "beforeSha256": "d73b64b2feaf86900b559c910bce8f87969123e3e6f013c436dca9a327895a76",
+      "afterSha256": "eaf5cfc72ef9f3da9f6dc21644f6c36b1781644bb6da3c0b9e5898d2373fd6fe",
+      "bytesBefore": 13721363,
+      "bytesAfter": 22001982
+    },
+    {
+      "file": "apps/dashboard/private/localization/ar.json",
+      "beforeSha256": "3a97a1295d4fa52bf420f3003ce00ce8ee9d26df64d22a93a6f3825837138834",
+      "afterSha256": "ddb84b17ac4d997cefadad382063875d55067f032a769c3019f35d28148f9855",
+      "bytesBefore": 13956948,
+      "bytesAfter": 22237412
+    },
+    {
+      "file": "apps/dashboard/private/localization/zh.json",
+      "beforeSha256": "bab7f832d7955d751c5dee6c00211f438d669f840df076a8d2cc5f6781f1e5f6",
+      "afterSha256": "235a1aa9b454d9c875ef3f6e053e3236c2dff43e8249b5bc20180be016159ad7",
+      "bytesBefore": 13585835,
+      "bytesAfter": 21866406
+    },
+    {
+      "file": "apps/dashboard/private/localization/ja.json",
+      "beforeSha256": "7a6617444dcefa914ac028764c4cd9898236763dca5b04dbd2e64e711fcc1aa3",
+      "afterSha256": "4483cf0eaa84e04c3df57b967a389f119ef0835b166aff019ac5df65749241fe",
+      "bytesBefore": 13725050,
+      "bytesAfter": 22005617
+    },
+    {
+      "file": "apps/dashboard/private/localization/hi.json",
+      "beforeSha256": "c506b7d6d40b15c89b89f66b945406afe154ea01daa5acf7d65e9327de805e2f",
+      "afterSha256": "555c741e998cc98d553bc322bf926ab246f6b825111babb1b522432fb5646312",
+      "bytesBefore": 14411683,
+      "bytesAfter": 22692172
+    },
+    {
+      "file": "apps/command-center/private/localization/pt-BR.json",
+      "beforeSha256": "f63646b0932f41690b90c1d79da6c53cc8bd6544c20fd54c377bdacb1b6c07ef",
+      "afterSha256": "03e1d6b58787c1005bd0346531e27f424d2b65daa3e2f4688a487bdc225b9a76",
+      "bytesBefore": 13537657,
+      "bytesAfter": 21709688
+    },
+    {
+      "file": "apps/command-center/private/localization/en.json",
+      "beforeSha256": "54a9542fc0e37dc71f61e7ded554a8ff66c53f29376178cc72592533ab03f8ee",
+      "afterSha256": "984a302a5ae610dab05d9617736caedc47f3ff2ea03f0409e6ee772dc9da67eb",
+      "bytesBefore": 13620063,
+      "bytesAfter": 21890141
+    },
+    {
+      "file": "apps/command-center/private/localization/es.json",
+      "beforeSha256": "80c1357b29608ff2bb3eee5448d0bdb6714cad87978a30a7b2a748d0566a8a77",
+      "afterSha256": "808de2783a2dce424180ef5f86bad7c92067900db05a672e5aa8c57f4ee0e7e2",
+      "bytesBefore": 13662078,
+      "bytesAfter": 21932105
+    },
+    {
+      "file": "apps/command-center/private/localization/fr.json",
+      "beforeSha256": "3ea0f3b496413b0f9b290aba7d0d6e28221725c2a504c7de2c15b46084ef5615",
+      "afterSha256": "521d512f49896282cbf14420a13994861b06d0a9d982e1f228ab5c69d67ac923",
+      "bytesBefore": 13706985,
+      "bytesAfter": 21977010
+    },
+    {
+      "file": "apps/command-center/private/localization/de.json",
+      "beforeSha256": "7d55bdec9526273e2f7e87558bd10be489aa11f40128795399c6445847953b6d",
+      "afterSha256": "738c0f44fd51466e5ec61d770f8468d204021288ab3ca06002ea9036cbe5e6d3",
+      "bytesBefore": 13683429,
+      "bytesAfter": 21953521
+    },
+    {
+      "file": "apps/command-center/private/localization/it.json",
+      "beforeSha256": "3f4305f0e028f3b6a6f82f5e9d819efa683ad6293a65031b567a9668e3af87d7",
+      "afterSha256": "25de52f98dba344a8cf3596ec57ae0e9d3adf850508ec8dd220031fa099d84c1",
+      "bytesBefore": 13661606,
+      "bytesAfter": 21931697
+    },
+    {
+      "file": "apps/command-center/private/localization/ar.json",
+      "beforeSha256": "c36cf7999e86b9777a41ec00a74a8da8f31a6fe3101f82fb060dfa650fb97094",
+      "afterSha256": "7f41b0782258f8fea3ac4252d68045850091c2489c24dfe09a43b64b8c418aea",
+      "bytesBefore": 13886284,
+      "bytesAfter": 22156220
+    },
+    {
+      "file": "apps/command-center/private/localization/zh.json",
+      "beforeSha256": "42d24e7a69a263534bddd3f6b6b097db733dbceb96dc94180e7c2908b9b0a16f",
+      "afterSha256": "c0df28ff49d3590baed7d862bd988482a3eb1e8acc1ada373530c2e7edbd6fba",
+      "bytesBefore": 13533032,
+      "bytesAfter": 21803075
+    },
+    {
+      "file": "apps/command-center/private/localization/ja.json",
+      "beforeSha256": "7bf7d44fe80452639da2d7a994e9700db736a9d9f8fdf81996e471285c5a148d",
+      "afterSha256": "14bdce152654df95baedcee328c522d92c9067e1cd2328a1ff7c67956a42d1f1",
+      "bytesBefore": 13664455,
+      "bytesAfter": 21934494
+    },
+    {
+      "file": "apps/command-center/private/localization/hi.json",
+      "beforeSha256": "cc7d73ff97a6cb039cab40aa5473eecfc131de3e4f34ed23f53e5d90b0b7e366",
+      "afterSha256": "d3d818e849efbcd05fd468deb5ba6401d1b1984c2edc58fb38edc023f4f2e71b",
+      "bytesBefore": 14316199,
+      "bytesAfter": 22586160
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/localization.js",
+      "beforeSha256": "176f386d1961334cb1c2e9eb2e1253c4f4f268507f4e7c4d2d41649bd90764c7",
+      "afterSha256": "24bfa6ce4a7e04b223070be0dec22546bbf1e05bbca7358c367fa6e53abc7d56",
+      "bytesBefore": 50800,
+      "bytesAfter": 53156
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/tool.json",
+      "beforeSha256": "9912d0ee14fa1a2df855b622623b7f0c1a49bcbccfde0c7655b0963b5923484a",
+      "afterSha256": "562ad5ef3ee0342c2c3dfe51a59391ec674905decf6fa062f5547e1d834e3113",
+      "bytesBefore": 21231,
+      "bytesAfter": 21887
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/engine/restoration-original-tools.json",
+      "beforeSha256": "0b863a6ceb489f7854156998cdf15c2a1d2629c20d6a65cd561033cebfdf06da",
+      "afterSha256": "ec30b96f9cae8698abc537e05ce444bdcd9db0517018a39a159af17b7d3889f2",
+      "bytesBefore": 1622,
+      "bytesAfter": 875
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/calculator.browser.js",
+      "beforeSha256": "ecce4118557aae997fe6d1b01aba8065c40cbc8c34dead3aa1b5710508551b67",
+      "afterSha256": "9f491e5dc7b11a738a4b43496a5a1617ad9c91405111b79a4b7575dd3c9f9a5b",
+      "bytesBefore": 7654,
+      "bytesAfter": 7434
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/pt-BR.md",
+      "beforeSha256": "b9a58e5ef3cb5017188d692d7e299ded810bc040f94f9fe4a1d0eb13f7a3ec80",
+      "afterSha256": "89fa5bee596ee44e0c61e675fe9fa120818eae03cf21326490856679b8673855",
+      "bytesBefore": 3626,
+      "bytesAfter": 3573
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/en.md",
+      "beforeSha256": "51a20587b52caea9a7b3db2ab862f6e994c0934fab3bb67607359c35aa629865",
+      "afterSha256": "e77bcf0807f4978b61fb3e0a3c516dd3f5b4d30a0a6b2c980749e600358789f9",
+      "bytesBefore": 3509,
+      "bytesAfter": 3462
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/es.md",
+      "beforeSha256": "851a53326f402fe1d0eb0c8f4bfb4cf49c524da213e3dd52ca666fa236c12008",
+      "afterSha256": "782ad2ec62e8d8a85d8d041e42b6d703cb6382cef07696f3d9d2955b40af0d01",
+      "bytesBefore": 3850,
+      "bytesAfter": 3788
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/fr.md",
+      "beforeSha256": "f7b217823671ecd62c71dec367aac24ed5a1e9d8f6e6a4ba55c1a5be8582edc2",
+      "afterSha256": "d23a7c33fa5881bc5c30c9c595f5e4ced9b1fc698fc425820bfd1627ddeed99f",
+      "bytesBefore": 4070,
+      "bytesAfter": 3970
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/de.md",
+      "beforeSha256": "240f0bd59372238ab9bf895ab81e0f603f3b55186e04bf57efbaee6d4ec1933b",
+      "afterSha256": "c49d09672635feb6754018f1974c0a75f090821b67d9de442c28356696f2dc56",
+      "bytesBefore": 3939,
+      "bytesAfter": 3906
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/it.md",
+      "beforeSha256": "5dcac0d1cf67c674a39af76018caeec2caabf8f5b8586f4c5922eea023e524c7",
+      "afterSha256": "bb242e5572ac6890f2b38c894638b7bb9195b2bc9cc9c2fdaac1623c791ed8d6",
+      "bytesBefore": 3768,
+      "bytesAfter": 3734
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/ar.md",
+      "beforeSha256": "f0408652003772ac7a73d3ce991cdf00e6c8b6592cf9e3902b1b664250b956af",
+      "afterSha256": "da03384fc3d91ac3b926a043c1571549834e53d0e83a562c8526917731be7d5f",
+      "bytesBefore": 4755,
+      "bytesAfter": 4612
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/zh.md",
+      "beforeSha256": "92cdf98d8b491900bf06747a29627db3a8ebfbc132b47b75ecfbade51331af39",
+      "afterSha256": "ee431d7081c9e45f5cfa44344eb93dfba581cdd4f90e3eed06e157e3ed29786c",
+      "bytesBefore": 3063,
+      "bytesAfter": 3027
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/ja.md",
+      "beforeSha256": "2336c2f41399eb30dc1d23bd35d792d5f41a9547a235b107d30543e1a2809f1d",
+      "afterSha256": "5f2f921e1c66d32bffd26790095f69ff3c795160de005f171751569bfb8462b7",
+      "bytesBefore": 3955,
+      "bytesAfter": 3915
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/documentation/hi.md",
+      "beforeSha256": "a3edfb934b40e3e03c423617b1229831b89975c00e866c1c5cb1469f811185aa",
+      "afterSha256": "8c08886b4adec5bff1a4e21def343898a3ea9cbea6e3b732ea723834a197d2b8",
+      "bytesBefore": 6805,
+      "bytesAfter": 6687
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/README.md",
+      "beforeSha256": "d057d826d570564e10f71e2a1d433042a9d43c760ee626dc61df3b51ca7eceff",
+      "afterSha256": "a920bc9a9fa719952db754c3422fb70cc19e240ec0abbb93bcb3bc0a26ce68bb",
+      "bytesBefore": 2807,
+      "bytesAfter": 3225
+    },
+    {
+      "file": "reports/review-20261005-completion/current-publication-candidates-27-localized/gold-dpoc/SOURCE-RIGHTS-REVIEW.md",
+      "beforeSha256": "f0a45d118fa030fed8a76001a9f937defbcc84e01aea0f1b2057f9f9229c589b",
+      "afterSha256": "77a35feca3a8755195c7d9bd22020414be87da4446c9f4164faede4466c808b4",
+      "bytesBefore": 2540,
+      "bytesAfter": 1611
+    }
+  ],
+  "snapshots": [
+    {
+      "app": "dashboard",
+      "locale": "pt-BR",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Grau mMRC previamente avaliado",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "displayLocale": "pt-BR",
+          "optionLocales": {
+            "0": "pt-BR",
+            "1": "pt-BR",
+            "2": "pt-BR",
+            "3": "pt-BR",
+            "4": "pt-BR"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "dashboard",
+      "locale": "en",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Previously assessed mMRC grade",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "en",
+          "displayLocale": "en",
+          "optionLocales": {
+            "0": "en",
+            "1": "en",
+            "2": "en",
+            "3": "en",
+            "4": "en"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "dashboard",
+      "locale": "es",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Grado mMRC evaluado previamente",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "es",
+          "displayLocale": "es",
+          "optionLocales": {
+            "0": "es",
+            "1": "es",
+            "2": "es",
+            "3": "es",
+            "4": "es"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "dashboard",
+      "locale": "fr",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Grade mMRC évalué au préalable",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "fr",
+          "displayLocale": "fr",
+          "optionLocales": {
+            "0": "fr",
+            "1": "fr",
+            "2": "fr",
+            "3": "fr",
+            "4": "fr"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "dashboard",
+      "locale": "de",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Bereits beurteilter mMRC-Grad",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "de",
+          "displayLocale": "de",
+          "optionLocales": {
+            "0": "de",
+            "1": "de",
+            "2": "de",
+            "3": "de",
+            "4": "de"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "dashboard",
+      "locale": "it",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Grado mMRC valutato in precedenza",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "it",
+          "displayLocale": "it",
+          "optionLocales": {
+            "0": "it",
+            "1": "it",
+            "2": "it",
+            "3": "it",
+            "4": "it"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "dashboard",
+      "locale": "ar",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "درجة mMRC التي جرى تقييمها مسبقًا",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "ar",
+          "displayLocale": "ar",
+          "optionLocales": {
+            "0": "ar",
+            "1": "ar",
+            "2": "ar",
+            "3": "ar",
+            "4": "ar"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "dashboard",
+      "locale": "zh",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "此前已评估的 mMRC 等级",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "zh",
+          "displayLocale": "zh",
+          "optionLocales": {
+            "0": "zh",
+            "1": "zh",
+            "2": "zh",
+            "3": "zh",
+            "4": "zh"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "dashboard",
+      "locale": "ja",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "事前に評価済みの mMRC グレード",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "ja",
+          "displayLocale": "ja",
+          "optionLocales": {
+            "0": "ja",
+            "1": "ja",
+            "2": "ja",
+            "3": "ja",
+            "4": "ja"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "dashboard",
+      "locale": "hi",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "पहले से आंका गया mMRC ग्रेड",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "hi",
+          "displayLocale": "hi",
+          "optionLocales": {
+            "0": "hi",
+            "1": "hi",
+            "2": "hi",
+            "3": "hi",
+            "4": "hi"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "pt-BR",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Grau mMRC previamente avaliado",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "displayLocale": "pt-BR",
+          "optionLocales": {
+            "0": "pt-BR",
+            "1": "pt-BR",
+            "2": "pt-BR",
+            "3": "pt-BR",
+            "4": "pt-BR"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "en",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Previously assessed mMRC grade",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "en",
+          "displayLocale": "en",
+          "optionLocales": {
+            "0": "en",
+            "1": "en",
+            "2": "en",
+            "3": "en",
+            "4": "en"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "es",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Grado mMRC evaluado previamente",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "es",
+          "displayLocale": "es",
+          "optionLocales": {
+            "0": "es",
+            "1": "es",
+            "2": "es",
+            "3": "es",
+            "4": "es"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "fr",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Grade mMRC évalué au préalable",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "fr",
+          "displayLocale": "fr",
+          "optionLocales": {
+            "0": "fr",
+            "1": "fr",
+            "2": "fr",
+            "3": "fr",
+            "4": "fr"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "de",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Bereits beurteilter mMRC-Grad",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "de",
+          "displayLocale": "de",
+          "optionLocales": {
+            "0": "de",
+            "1": "de",
+            "2": "de",
+            "3": "de",
+            "4": "de"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "it",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "Grado mMRC valutato in precedenza",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "it",
+          "displayLocale": "it",
+          "optionLocales": {
+            "0": "it",
+            "1": "it",
+            "2": "it",
+            "3": "it",
+            "4": "it"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "ar",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "درجة mMRC التي جرى تقييمها مسبقًا",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "ar",
+          "displayLocale": "ar",
+          "optionLocales": {
+            "0": "ar",
+            "1": "ar",
+            "2": "ar",
+            "3": "ar",
+            "4": "ar"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "zh",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "此前已评估的 mMRC 等级",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "zh",
+          "displayLocale": "zh",
+          "optionLocales": {
+            "0": "zh",
+            "1": "zh",
+            "2": "zh",
+            "3": "zh",
+            "4": "zh"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "ja",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "事前に評価済みの mMRC グレード",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "ja",
+          "displayLocale": "ja",
+          "optionLocales": {
+            "0": "ja",
+            "1": "ja",
+            "2": "ja",
+            "3": "ja",
+            "4": "ja"
+          }
+        }
+      ],
+      "noteIncluded": true
+    },
+    {
+      "app": "command-center",
+      "locale": "hi",
+      "otherToolContentUnchanged": true,
+      "field": [
+        "mmrc",
+        "पहले से आंका गया mMRC ग्रेड",
+        "sel",
+        {
+          "opts": {
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "unitLocale": "hi",
+          "displayLocale": "hi",
+          "optionLocales": {
+            "0": "hi",
+            "1": "hi",
+            "2": "hi",
+            "3": "hi",
+            "4": "hi"
+          }
+        }
+      ],
+      "noteIncluded": true
+    }
+  ],
+  "arithmetic": {
+    "restoredMethodsSha256": "c08d44cedcaa219b1617d6afc1b2b73d0fa745c7c28e613f853b55722f90bcf4",
+    "adapterSha256": "332e7d7d1fee94890d17a1614cac1d1a59cec6070384496d1584d51dcbcecaa7",
+    "arithmeticBytesUnchanged": true,
+    "existingExpectedTests": {
+      "id": "gold-dpoc",
+      "cases": 7,
+      "checks": 77,
+      "failed": 0,
+      "clinicalApproval": false,
+      "professionalLanguageApproval": false
+    },
+    "replayedCases": [
+      {
+        "name": "Vetor sintético principal de referência",
+        "input": {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "2",
+          "exac": 1,
+          "intern": 0,
+          "caat": 12,
+          "contexto": "1"
+        },
+        "expected": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / E",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "E",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "obtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / E",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "E",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browserObtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / E",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "E",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true,
+        "scope": "Before/after implementation parity; existing case expectations are checked separately by test.cjs"
+      },
+      {
+        "name": "VEF1 80; mMRC1; nenhum evento; sem CAT",
+        "input": {
+          "rel": 0.6,
+          "vef1": 80,
+          "mmrc": "1",
+          "exac": 0,
+          "intern": 0,
+          "caat": null,
+          "contexto": "1"
+        },
+        "expected": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 1 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 1,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "obtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 1 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 1,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browserObtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 1 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 1,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true,
+        "scope": "Before/after implementation parity; existing case expectations are checked separately by test.cjs"
+      },
+      {
+        "name": "VEF1 50; mMRC2; nenhum evento",
+        "input": {
+          "rel": 0.6,
+          "vef1": 50,
+          "mmrc": "2",
+          "exac": 0,
+          "intern": 0,
+          "caat": null,
+          "contexto": "1"
+        },
+        "expected": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "obtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browserObtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true,
+        "scope": "Before/after implementation parity; existing case expectations are checked separately by test.cjs"
+      },
+      {
+        "name": "VEF1 30; CAT10 classifica B com mMRC0",
+        "input": {
+          "rel": 0.6,
+          "vef1": 30,
+          "mmrc": "0",
+          "exac": 0,
+          "intern": 0,
+          "caat": 10,
+          "contexto": "1"
+        },
+        "expected": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 3 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 3,
+            "group": "B",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "obtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 3 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 3,
+            "group": "B",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browserObtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 3 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 3,
+            "group": "B",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true,
+        "scope": "Before/after implementation parity; existing case expectations are checked separately by test.cjs"
+      },
+      {
+        "name": "VEF1 abaixo30; CAT9 e mMRC1",
+        "input": {
+          "rel": 0.6,
+          "vef1": 29.9,
+          "mmrc": "1",
+          "exac": 0,
+          "intern": 0,
+          "caat": 9,
+          "contexto": "1"
+        },
+        "expected": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 4 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 4,
+            "group": "A",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "obtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 4 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 4,
+            "group": "A",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browserObtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 4 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 4,
+            "group": "A",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true,
+        "scope": "Before/after implementation parity; existing case expectations are checked separately by test.cjs"
+      },
+      {
+        "name": "Um único evento moderado é E em 2026",
+        "input": {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "0",
+          "exac": 1,
+          "intern": 0,
+          "caat": 0,
+          "contexto": "1"
+        },
+        "expected": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / E",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "E",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "obtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / E",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "E",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browserObtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / E",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "E",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true,
+        "scope": "Before/after implementation parity; existing case expectations are checked separately by test.cjs"
+      },
+      {
+        "name": "Um evento grave é E independentemente dos sintomas",
+        "input": {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "0",
+          "exac": 0,
+          "intern": 1,
+          "caat": 0,
+          "contexto": "1"
+        },
+        "expected": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / E",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "E",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "obtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / E",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "E",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browserObtained": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / E",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "E",
+            "symptomMeasure": "mMRC + CAT/CAAT"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true,
+        "scope": "Before/after implementation parity; existing case expectations are checked separately by test.cjs"
+      }
+    ],
+    "grades0Through4Parity": [
+      {
+        "input": {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "0",
+          "exac": 0,
+          "intern": 0,
+          "caat": null,
+          "contexto": "1"
+        },
+        "node": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterNode": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterBrowser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true
+      },
+      {
+        "input": {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "1",
+          "exac": 0,
+          "intern": 0,
+          "caat": null,
+          "contexto": "1"
+        },
+        "node": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterNode": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterBrowser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / A",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "A",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true
+      },
+      {
+        "input": {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "2",
+          "exac": 0,
+          "intern": 0,
+          "caat": null,
+          "contexto": "1"
+        },
+        "node": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterNode": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterBrowser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true
+      },
+      {
+        "input": {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "3",
+          "exac": 0,
+          "intern": 0,
+          "caat": null,
+          "contexto": "1"
+        },
+        "node": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterNode": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterBrowser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true
+      },
+      {
+        "input": {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "4",
+          "exac": 0,
+          "intern": 0,
+          "caat": null,
+          "contexto": "1"
+        },
+        "node": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "browser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterNode": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "afterBrowser": {
+          "id": "gold-dpoc",
+          "main": [
+            "GOLD 2 / B",
+            ""
+          ],
+          "label": "GOLD 2026",
+          "raw": {
+            "grade": 2,
+            "group": "B",
+            "symptomMeasure": "mMRC"
+          },
+          "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "clinicalValidation": "not-performed"
+        },
+        "passed": true
+      }
+    ]
+  },
+  "oldDescriptorScan": {
+    "distinctDescriptorStrings": 50,
+    "files": [
+      {
+        "file": ".gitattributes",
+        "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": ".gitignore",
+        "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "AUTHORSHIP.md",
+        "sha256": "5634b4eb6da75fe3cc361eefbdcfaa258073448facffb773dd8e08b3e262d56a",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "calculator.browser.js",
+        "sha256": "9f491e5dc7b11a738a4b43496a5a1617ad9c91405111b79a4b7575dd3c9f9a5b",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "calculator.js",
+        "sha256": "78a856fc8b1eefcc58d7d994a4088e28ae401842528f4ed1827d9528c3158e07",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "CITATION.cff",
+        "sha256": "485da953f6079dd6b7ee116b6df21319a6cdc888da98316563c17a545c99425d",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "CODE-COMPONENTS.md",
+        "sha256": "b862342616fd1a9692aa72f9ae6261ed922db69c80b5047bbc92b08962b009de",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "sha256": "c9fd88ca7c48f11f2cda687833cf6fc0a0d8d4ea911b1c1dfc3c572b335d84c3",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "demo-runtime.js",
+        "sha256": "734da1ceff19b961423e1bb5d2c9eaafd18920b32cc4f331856f6065c9cfd2c9",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/ar.md",
+        "sha256": "da03384fc3d91ac3b926a043c1571549834e53d0e83a562c8526917731be7d5f",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/de.md",
+        "sha256": "c49d09672635feb6754018f1974c0a75f090821b67d9de442c28356696f2dc56",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/en.md",
+        "sha256": "e77bcf0807f4978b61fb3e0a3c516dd3f5b4d30a0a6b2c980749e600358789f9",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/es.md",
+        "sha256": "782ad2ec62e8d8a85d8d041e42b6d703cb6382cef07696f3d9d2955b40af0d01",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/fr.md",
+        "sha256": "d23a7c33fa5881bc5c30c9c595f5e4ced9b1fc698fc425820bfd1627ddeed99f",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/hi.md",
+        "sha256": "8c08886b4adec5bff1a4e21def343898a3ea9cbea6e3b732ea723834a197d2b8",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/it.md",
+        "sha256": "bb242e5572ac6890f2b38c894638b7bb9195b2bc9cc9c2fdaac1623c791ed8d6",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/ja.md",
+        "sha256": "5f2f921e1c66d32bffd26790095f69ff3c795160de005f171751569bfb8462b7",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/pt-BR.md",
+        "sha256": "89fa5bee596ee44e0c61e675fe9fa120818eae03cf21326490856679b8673855",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "documentation/zh.md",
+        "sha256": "ee431d7081c9e45f5cfa44344eb93dfba581cdd4f90e3eed06e157e3ed29786c",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "engine/restoration-original-tools.json",
+        "sha256": "ec30b96f9cae8698abc537e05ce444bdcd9db0517018a39a159af17b7d3889f2",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "engine/restored-methods.cjs",
+        "sha256": "c08d44cedcaa219b1617d6afc1b2b73d0fa745c7c28e613f853b55722f90bcf4",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "engine/tool-code/gold-dpoc/calculator.js",
+        "sha256": "332e7d7d1fee94890d17a1614cac1d1a59cec6070384496d1584d51dcbcecaa7",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "evidence/http-reference-replay.json",
+        "sha256": "0ff1817dca281ad08e449030960aad81a4491fc24e77ccbeb0fab9e6c6644037",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "evidence/publication-base-reference.json",
+        "sha256": "dff504ad416a859e9866dc52d18add7f88095eebf44c47e7d2b0fb53db2e4a2d",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "examples.json",
+        "sha256": "f977600f2043a139bb058689894e4c9206a5844579d14e1d14bd4fb833c83ff4",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "index.html",
+        "sha256": "2fc3ee419bece8636dcc917f3801c3ea16a8ad66d8a561dc91345bf111bbf64e",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "LICENSE",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "localization.js",
+        "sha256": "24bfa6ce4a7e04b223070be0dec22546bbf1e05bbca7358c367fa6e53abc7d56",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "METHOD-CODE-LICENSE.txt",
+        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "METHOD-CODE-NOTICE.md",
+        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "NOTICE",
+        "sha256": "56428bce7dd5c954b73176285f82558c9293709c88d5f26e3a87f0ac74a7322f",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "package.json",
+        "sha256": "bf4515a94fadfbb614c6239615dab4a07a20abed787199c97601e49801128acb",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "portal-formatters.browser.js",
+        "sha256": "d8522ffe0b858012dfd25e5e8d10fe2eefec977f2bdb612be5cbadf5c4bed9f3",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "prior-publication-provenance.json",
+        "sha256": "67a5067f7369220815e99ca666be66d6ecdd08bc29f9be5bee0d307a5479ed53",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "publication-provenance.json",
+        "sha256": "dfcc944d1446ac059f3db0c5ed5bbd3ca4588f556c0ed5005258bcb626cc7c7d",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "README.md",
+        "sha256": "a920bc9a9fa719952db754c3422fb70cc19e240ec0abbb93bcb3bc0a26ce68bb",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "results.json",
+        "sha256": "29dcc92a4fc094f97b1989db2472baab9e97944e70b4273461a561f23344c24c",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "SECURITY.md",
+        "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "SOURCE-RIGHTS-REVIEW.md",
+        "sha256": "77a35feca3a8755195c7d9bd22020414be87da4446c9f4164faede4466c808b4",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "test.cjs",
+        "sha256": "a21576211b1314bc50491ef3c676d01211206c328ad89fb351743d896b2be9b8",
+        "oldDescriptorMatches": 0
+      },
+      {
+        "file": "tool.json",
+        "sha256": "562ad5ef3ee0342c2c3dfe51a59391ec674905decf6fa062f5547e1d834e3113",
+        "oldDescriptorMatches": 0
+      }
+    ],
+    "remainingMatches": 0,
+    "scope": "Every file in this GOLD stage before this receipt was added"
+  },
+  "protectedFiles": [
+    {
+      "file": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "unchanged": true
+    },
+    {
+      "file": "NOTICE",
+      "sha256": "56428bce7dd5c954b73176285f82558c9293709c88d5f26e3a87f0ac74a7322f",
+      "unchanged": true
+    },
+    {
+      "file": "AUTHORSHIP.md",
+      "sha256": "5634b4eb6da75fe3cc361eefbdcfaa258073448facffb773dd8e08b3e262d56a",
+      "unchanged": true
+    },
+    {
+      "file": "CITATION.cff",
+      "sha256": "485da953f6079dd6b7ee116b6df21319a6cdc888da98316563c17a545c99425d",
+      "unchanged": true
+    },
+    {
+      "file": "SECURITY.md",
+      "sha256": "3c20d46e436116be0c673f0260b24bbc2193fafbd15fb4659bf0e545b452487e",
+      "unchanged": true
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "sha256": "c9fd88ca7c48f11f2cda687833cf6fc0a0d8d4ea911b1c1dfc3c572b335d84c3",
+      "unchanged": true
+    },
+    {
+      "file": ".github/workflows/ci.yml",
+      "sha256": "bdbefea1fc6b1d8847725c698f62920917bc8d6504bfe8ed622ed2d5aaf7f160",
+      "unchanged": true
+    },
+    {
+      "file": ".gitattributes",
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+      "unchanged": true
+    },
+    {
+      "file": ".gitignore",
+      "sha256": "763fb702ccbb9bfd8549ca3d0844c731b22aca4e665a2b61d1bb764b64f734d8",
+      "unchanged": true
+    },
+    {
+      "file": "METHOD-CODE-LICENSE.txt",
+      "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93",
+      "unchanged": true
+    },
+    {
+      "file": "METHOD-CODE-NOTICE.md",
+      "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d",
+      "unchanged": true
+    },
+    {
+      "file": "examples.json",
+      "sha256": "f977600f2043a139bb058689894e4c9206a5844579d14e1d14bd4fb833c83ff4",
+      "unchanged": true
+    },
+    {
+      "file": "results.json",
+      "sha256": "29dcc92a4fc094f97b1989db2472baab9e97944e70b4273461a561f23344c24c",
+      "unchanged": true
+    },
+    {
+      "file": "test.cjs",
+      "sha256": "a21576211b1314bc50491ef3c676d01211206c328ad89fb351743d896b2be9b8",
+      "unchanged": true
+    },
+    {
+      "file": "evidence/http-reference-replay.json",
+      "sha256": "0ff1817dca281ad08e449030960aad81a4491fc24e77ccbeb0fab9e6c6644037",
+      "unchanged": true
+    },
+    {
+      "file": "publication-provenance.json",
+      "sha256": "dfcc944d1446ac059f3db0c5ed5bbd3ca4588f556c0ed5005258bcb626cc7c7d",
+      "unchanged": true
+    },
+    {
+      "file": "prior-publication-provenance.json",
+      "sha256": "67a5067f7369220815e99ca666be66d6ecdd08bc29f9be5bee0d307a5479ed53",
+      "unchanged": true
+    }
+  ],
+  "historicalReceiptsPreserved": true,
+  "clinicalApproval": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "wholeInstrumentApproval": false,
+  "publicationPerformed": false
+}

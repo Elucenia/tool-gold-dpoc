@@ -1,16 +1,16 @@
 {
   "tool": {
     "id": "gold-dpoc",
-    "title": "Classificação GOLD da DPOC",
-    "short": "Gravidade espirométrica (GOLD 1–4) e grupo A, B ou E",
-    "desc": "Classifique a DPOC pela GOLD: gravidade da obstrução (GOLD 1 a 4) pelo VEF1 pós-broncodilatador e grupo A, B ou E por dispneia (mMRC) e exacerbações.",
-    "lead": "Confirma a obstrução (VEF₁/CVF pós-broncodilatador &lt; 0,70), gradua sua gravidade e define o grupo ABE, que orienta o tratamento farmacológico inicial.",
+    "title": "Classificação GOLD 2026",
+    "short": "Classificação espirométrica e grupos ABE na avaliação inicial",
+    "desc": "Classifica a limitação ao fluxo aéreo e os grupos ABE da edição GOLD 2026 na população elegível. Esta ferramenta não confirma o diagnóstico isoladamente, não seleciona medicamentos e não aplica o algoritmo de seguimento.",
+    "lead": "Classifica a limitação ao fluxo aéreo e os grupos ABE da edição GOLD 2026 na população elegível. Esta ferramenta não confirma o diagnóstico isoladamente, não seleciona medicamentos e não aplica o algoritmo de seguimento.",
+    "kind": "Escore",
     "spec": [
       "pneumologia",
       "clinica-medica",
       "medicina-de-familia-e-comunidade"
     ],
-    "tier": 1,
     "fields": [
       [
         "rel",
@@ -36,15 +36,23 @@
       ],
       [
         "mmrc",
-        "Dispneia (escala mMRC)",
+        "Grau mMRC previamente avaliado",
         "sel",
         {
           "opts": {
-            "0": "0: só com exercício intenso",
-            "1": "1: ao andar rápido ou subir ladeira",
-            "2": "2: anda mais devagar que pessoas da mesma idade ou para ao andar no plano",
-            "3": "3: para após ~100 m ou poucos minutos no plano",
-            "4": "4: não sai de casa ou tem dispneia ao se vestir"
+            "0": "0",
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4"
+          },
+          "displayLocale": "pt-BR",
+          "optionLocales": {
+            "0": "pt-BR",
+            "1": "pt-BR",
+            "2": "pt-BR",
+            "3": "pt-BR",
+            "4": "pt-BR"
           }
         }
       ],
@@ -55,52 +63,51 @@
         {
           "min": 0,
           "max": 20,
-          "ph": "0"
+          "ph": "0",
+          "integer": true
         }
       ],
       [
         "intern",
-        "Exacerbações com internação no último ano",
+        "Exacerbações graves no último ano (atendimento de emergência ou internação)",
         "num",
         {
           "min": 0,
           "max": 10,
-          "ph": "0"
+          "ph": "0",
+          "integer": true
+        }
+      ],
+      [
+        "caat",
+        "Pontuação CAT/CAAT (se disponível)",
+        "num",
+        {
+          "min": 0,
+          "max": 40,
+          "unit": "pontos",
+          "integer": true,
+          "opt": true
+        }
+      ],
+      [
+        "contexto",
+        "DPOC confirmada clinicamente, espirometria pós-broncodilatador válida e avaliação inicial antes de terapia de manutenção?",
+        "sel",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
         }
       ]
     ],
-    "formula": "<p><strong>Diagnóstico:</strong> VEF₁/CVF pós-broncodilatador &lt; 0,70.</p><p><strong>Gravidade (VEF₁ % do previsto):</strong> GOLD 1 ≥ 80; GOLD 2 50–79; GOLD 3 30–49; GOLD 4 &lt; 30.</p><p><strong>Grupos:</strong> E = ≥ 2 exacerbações moderadas ou ≥ 1 com internação no ano; sem isso, A = mMRC 0–1 e B = mMRC ≥ 2.</p>",
-    "table": [
-      [
-        "Grupo",
-        "Critério",
-        "Tratamento inicial (GOLD)"
-      ],
-      [
-        "A",
-        "0–1 exacerbação sem internação; mMRC 0–1",
-        "Um broncodilatador"
-      ],
-      [
-        "B",
-        "0–1 exacerbação sem internação; mMRC ≥ 2",
-        "LABA + LAMA"
-      ],
-      [
-        "E",
-        "≥ 2 exacerbações ou ≥ 1 internação",
-        "LABA + LAMA; LABA + LAMA + CI se eosinófilos ≥ 300/µL"
-      ]
-    ],
-    "table_note": "A GOLD também aceita o questionário CAT (≥ 10 = mais sintomas); esta ferramenta usa só a mMRC.",
-    "tips": [
-      "Use sempre valores <strong>pós-broncodilatador</strong>: a relação pré-broncodilatador superestima a obstrução.",
-      "A razão fixa 0,70 superdiagnostica DPOC em idosos e subdiagnostica em jovens; na dúvida, compare com o limite inferior da normalidade (LIN).",
-      "O grau espirométrico (1–4) e o grupo (A, B, E) são independentes: um GOLD 4 pode ser grupo A, e o tratamento inicial segue o grupo.",
-      "No acompanhamento, a GOLD orienta ajustar o tratamento pelo traço dominante (dispneia ou exacerbações), não reclassificar o grupo.",
-      "Contagem de eosinófilos ≥ 300/µL prevê resposta ao corticoide inalatório; &lt; 100/µL sugere pouco benefício."
-    ],
+    "formula": "<p>VEF₁/CVF &lt; 0,70 é requisito espirométrico, não diagnóstico isolado. GOLD 1: VEF₁ ≥ 80%; 2: ≥ 50%; 3: ≥ 30%; 4: &lt; 30%. GOLD 2026: grupo E se ≥ 1 exacerbação moderada ou grave no último ano; sem isso, B se mMRC ≥ 2 ou CAT/CAAT ≥ 10, A nos demais. Se CAT/CAAT não for informado, usa-se mMRC.</p>",
     "sources": [
+      [
+        "GOLD · relatório 2026 v1.3",
+        "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf"
+      ],
       [
         "Agustí A et al. Global Initiative for Chronic Obstructive Lung Disease 2023 Report: GOLD Executive Summary. Eur Respir J, 2023.",
         "https://doi.org/10.1183/13993003.00239-2023"
@@ -108,127 +115,505 @@
     ],
     "cases": [
       [
-        "VEF₁/CVF 0,62, VEF₁ 65%, mMRC 1, sem exacerbações: GOLD 2, grupo A",
+        "Vetor sintético principal de referência",
         {
-          "rel": 0.62,
-          "vef1": 65,
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "2",
+          "exac": 1,
+          "intern": 0,
+          "caat": 12,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "grade": 2,
+            "group": "E"
+          },
+          "main": "GOLD 2 / E"
+        }
+      ],
+      [
+        "VEF1 80; mMRC1; nenhum evento; sem CAT",
+        {
+          "rel": 0.6,
+          "vef1": 80,
           "mmrc": "1",
           "exac": 0,
-          "intern": 0
+          "intern": 0,
+          "caat": null,
+          "contexto": "1"
         },
         {
           "raw": {
-            "gold": 2,
-            "grupo": "A"
+            "grade": 1,
+            "group": "A"
           },
-          "level": "low"
+          "main": "GOLD 1 / A"
         }
       ],
       [
-        "VEF₁ 80% (limite): GOLD 1",
+        "VEF1 50; mMRC2; nenhum evento",
         {
-          "rel": 0.68,
-          "vef1": 80,
-          "mmrc": "0",
-          "exac": 0,
-          "intern": 0
-        },
-        {
-          "raw": {
-            "gold": 1,
-            "grupo": "A"
-          },
-          "level": "low"
-        }
-      ],
-      [
-        "VEF₁ 45%, mMRC 3, 1 exacerbação: GOLD 3, grupo B",
-        {
-          "rel": 0.55,
-          "vef1": 45,
-          "mmrc": "3",
-          "exac": 1,
-          "intern": 0
-        },
-        {
-          "raw": {
-            "gold": 3,
-            "grupo": "B"
-          },
-          "level": "mid"
-        }
-      ],
-      [
-        "VEF₁ 28%, mMRC 2, 1 internação: GOLD 4, grupo E",
-        {
-          "rel": 0.45,
-          "vef1": 28,
+          "rel": 0.6,
+          "vef1": 50,
           "mmrc": "2",
           "exac": 0,
-          "intern": 1
+          "intern": 0,
+          "caat": null,
+          "contexto": "1"
         },
         {
           "raw": {
-            "gold": 4,
-            "grupo": "E"
+            "grade": 2,
+            "group": "B"
           },
-          "level": "high"
+          "main": "GOLD 2 / B"
         }
       ],
       [
-        "VEF₁/CVF 0,72: sem obstrução",
+        "VEF1 30; CAT10 classifica B com mMRC0",
         {
-          "rel": 0.72,
-          "vef1": 85,
-          "mmrc": "1",
+          "rel": 0.6,
+          "vef1": 30,
+          "mmrc": "0",
           "exac": 0,
-          "intern": 0
+          "intern": 0,
+          "caat": 10,
+          "contexto": "1"
         },
         {
           "raw": {
-            "gold": 0
+            "grade": 3,
+            "group": "B"
           },
-          "level": "low",
-          "verdict": "não confirma"
+          "main": "GOLD 3 / B"
+        }
+      ],
+      [
+        "VEF1 abaixo30; CAT9 e mMRC1",
+        {
+          "rel": 0.6,
+          "vef1": 29.9,
+          "mmrc": "1",
+          "exac": 0,
+          "intern": 0,
+          "caat": 9,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "grade": 4,
+            "group": "A"
+          },
+          "main": "GOLD 4 / A"
+        }
+      ],
+      [
+        "Um único evento moderado é E em 2026",
+        {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "0",
+          "exac": 1,
+          "intern": 0,
+          "caat": 0,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "grade": 2,
+            "group": "E"
+          },
+          "main": "GOLD 2 / E"
+        }
+      ],
+      [
+        "Um evento grave é E independentemente dos sintomas",
+        {
+          "rel": 0.6,
+          "vef1": 60,
+          "mmrc": "0",
+          "exac": 0,
+          "intern": 1,
+          "caat": 0,
+          "contexto": "1"
+        },
+        {
+          "raw": {
+            "grade": 2,
+            "group": "E"
+          },
+          "main": "GOLD 2 / E"
         }
       ]
     ],
-    "kind": "Calculadora",
-    "config": null,
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
-      "testedAt": "2026-09-25",
-      "total": 5,
-      "passed": 5,
-      "failures": []
+      "testedAt": "2026-10-03",
+      "total": 7,
+      "passed": 7,
+      "failures": [],
+      "evidencePath": "reports/review-20261003/restored-methods-source-rules.json",
+      "scope": "Synthetic source-rule arithmetic checks. Independent clinical validation not performed."
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03",
+      "total": 40,
+      "passed": 40,
+      "evidencePath": "reports/review-20261003/restored-methods-source-rules.json",
+      "scope": "Independent expected values and source-rule boundary checks; not clinical approval.",
+      "sourceRowCount": 40,
+      "uniqueApiInputCount": 36,
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "audit": {
+          "file": "reports/review-20261003/independent-source-corpus-input-identity-audit-final25.json",
+          "sha256": "35d65e84c5608a5f572fce6837f0a8c101b2266f5d6eec32a3d60d2bb6b022ca"
+        },
+        "sourceRows": 40,
+        "uniqueApiInputs": 36,
+        "duplicateRows": 4,
+        "duplicates": [
+          {
+            "first": 10,
+            "repeat": 13,
+            "input": {
+              "rel": null,
+              "vef1": 60,
+              "mmrc": "2",
+              "exac": 1,
+              "intern": 0,
+              "caat": 12,
+              "contexto": "1"
+            }
+          },
+          {
+            "first": 15,
+            "repeat": 18,
+            "input": {
+              "rel": 0.6,
+              "vef1": null,
+              "mmrc": "2",
+              "exac": 1,
+              "intern": 0,
+              "caat": 12,
+              "contexto": "1"
+            }
+          },
+          {
+            "first": 22,
+            "repeat": 26,
+            "input": {
+              "rel": 0.6,
+              "vef1": 60,
+              "mmrc": "2",
+              "exac": null,
+              "intern": 0,
+              "caat": 12,
+              "contexto": "1"
+            }
+          },
+          {
+            "first": 28,
+            "repeat": 32,
+            "input": {
+              "rel": 0.6,
+              "vef1": 60,
+              "mmrc": "2",
+              "exac": 1,
+              "intern": null,
+              "caat": 12,
+              "contexto": "1"
+            }
+          }
+        ],
+        "coverageStatusUnchanged": true
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "limits": "Esta edição classifica avaliação inicial. Não representa o algoritmo de seguimento nem prescreve medicamentos. Valores limítrofes e qualidade do exame exigem conferência clínica. Informe somente o grau mMRC de 0 a 4 previamente aferido em avaliação separada. Esta ferramenta recebe o grau já avaliado e não administra o questionário mMRC.",
+    "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+    "currentMethodSource": {
+      "title": "GOLD · relatório 2026 v1.3",
+      "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf",
+      "version": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+      "checkedAt": "2026-10-03",
+      "access": "official-report-search-index"
+    },
+    "primaryVerification": {
+      "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf",
+      "checked": "Atualização oficial GOLD 2026, versão 1.3: grupo E a partir de uma exacerbação moderada ou grave; distinção entre avaliação inicial e seguimento; limiares mMRC ≥ 2 e CAT/CAAT ≥ 10; graus por VEF1. Consulta pelo índice do relatório oficial; abertura integral do PDF indisponível no navegador de pesquisa.",
+      "access": "official-report-search-index"
+    },
+    "clinicalValidation": "not-performed",
+    "languageReview": "not-performed",
+    "reviewStatus": "needs-review",
+    "implementationStatus": "available",
+    "versionEvidence": {
+      "status": "explicit-implemented-variant-and-existing-source-proofs-recorded",
+      "checkedAt": "2026-10-04T17:52:09.841Z",
+      "declaredMethodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+      "implementedVariant": "VEF₁/CVF < 0,70 é requisito espirométrico, não diagnóstico isolado. GOLD 1: VEF₁ ≥ 80%; 2: ≥ 50%; 3: ≥ 30%; 4: < 30%. GOLD 2026: grupo E se ≥ 1 exacerbação moderada ou grave no último ano; sem isso, B se mMRC ≥ 2 ou CAT/CAAT ≥ 10, A nos demais. Se CAT/CAAT não for informado, usa-se mMRC.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "rel",
+            "label": "Relação VEF₁/CVF pós-broncodilatador",
+            "type": "num",
+            "min": 0.2,
+            "max": 1.2,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "vef1",
+            "label": "VEF₁ pós-broncodilatador",
+            "type": "num",
+            "min": 5,
+            "max": 150,
+            "unit": "% do previsto",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "mmrc",
+            "label": "Grau mMRC previamente avaliado",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "0",
+              "1": "1",
+              "2": "2",
+              "3": "3",
+              "4": "4"
+            }
+          },
+          {
+            "key": "exac",
+            "label": "Exacerbações moderadas no último ano (corticoide e/ou antibiótico)",
+            "type": "num",
+            "min": 0,
+            "max": 20,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "intern",
+            "label": "Exacerbações graves no último ano (atendimento de emergência ou internação)",
+            "type": "num",
+            "min": 0,
+            "max": 10,
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "caat",
+            "label": "Pontuação CAT/CAAT (se disponível)",
+            "type": "num",
+            "min": 0,
+            "max": 40,
+            "unit": "pontos",
+            "optional": true,
+            "options": null
+          },
+          {
+            "key": "contexto",
+            "label": "DPOC confirmada clinicamente, espirometria pós-broncodilatador válida e avaliação inicial antes de terapia de manutenção?",
+            "type": "sel",
+            "optional": false,
+            "options": {
+              "0": "Não",
+              "1": "Sim"
+            }
+          }
+        ],
+        "hash": "da8e631d33dd067c95e5d335fe95e5f25eab6d4d36599966db1561843d85ed2b",
+        "hashInputDefinition": "SHA256 of UTF8 JSON.stringify({id:tool.id,fields:tool.fields,formula:tool.formula,config:tool.config||null}), preserving declared order/value types; not a hash of versionEvidence.inputContract.fields display projection."
+      },
+      "sourceEditions": [
+        {
+          "citation": "GOLD · relatório 2026 v1.3",
+          "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf",
+          "class": "existing-source-record-transcribed",
+          "declaredCitationPreserved": true,
+          "sourceIdentityRecheckedInThisNormalization": false,
+          "publicationEditionConfirmationInThisNormalization": "not-performed",
+          "fullTextRetrievalInThisNormalization": false,
+          "formulaConformance": "not-assessed"
+        },
+        {
+          "citation": "Agustí A et al. Global Initiative for Chronic Obstructive Lung Disease 2023 Report: GOLD Executive Summary. Eur Respir J, 2023.",
+          "url": "https://doi.org/10.1183/13993003.00239-2023",
+          "class": "existing-source-record-transcribed",
+          "declaredCitationPreserved": true,
+          "sourceIdentityRecheckedInThisNormalization": false,
+          "publicationEditionConfirmationInThisNormalization": "not-performed",
+          "fullTextRetrievalInThisNormalization": false,
+          "formulaConformance": "not-assessed"
+        }
+      ],
+      "existingSourceEvidence": {
+        "currentMethodSource": {
+          "title": "GOLD · relatório 2026 v1.3",
+          "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf",
+          "version": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "checkedAt": "2026-10-03",
+          "access": "official-report-search-index"
+        },
+        "primaryVerification": {
+          "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf",
+          "checked": "Atualização oficial GOLD 2026, versão 1.3: grupo E a partir de uma exacerbação moderada ou grave; distinção entre avaliação inicial e seguimento; limiares mMRC ≥ 2 e CAT/CAAT ≥ 10; graus por VEF1. Consulta pelo índice do relatório oficial; abertura integral do PDF indisponível no navegador de pesquisa.",
+          "access": "official-report-search-index"
+        }
+      },
+      "editionRecordingScope": "The methodVersion and all previously recorded source access/edition proofs are transcribed unchanged. This technical normalization makes no new bibliographic/full-text/source-formula confirmation; named existing read scopes remain in existingSourceEvidence. A missing standardized container did not mean the method edition was missing.",
+      "publicationEditionConfirmationReevaluated": false,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by technical hashes or metadata normalization; retain existing bounded source arithmetic and clinical review separately.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03",
+        "total": 40,
+        "passed": 40,
+        "evidencePath": "reports/review-20261003/restored-methods-source-rules.json",
+        "scope": "Independent expected values and source-rule boundary checks; not clinical approval.",
+        "sourceRowCount": 40,
+        "uniqueApiInputCount": 36,
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "audit": {
+            "file": "reports/review-20261003/independent-source-corpus-input-identity-audit-final25.json",
+            "sha256": "35d65e84c5608a5f572fce6837f0a8c101b2266f5d6eec32a3d60d2bb6b022ca"
+          },
+          "sourceRows": 40,
+          "uniqueApiInputs": 36,
+          "duplicateRows": 4,
+          "duplicates": [
+            {
+              "first": 10,
+              "repeat": 13,
+              "input": {
+                "rel": null,
+                "vef1": 60,
+                "mmrc": "2",
+                "exac": 1,
+                "intern": 0,
+                "caat": 12,
+                "contexto": "1"
+              }
+            },
+            {
+              "first": 15,
+              "repeat": 18,
+              "input": {
+                "rel": 0.6,
+                "vef1": null,
+                "mmrc": "2",
+                "exac": 1,
+                "intern": 0,
+                "caat": 12,
+                "contexto": "1"
+              }
+            },
+            {
+              "first": 22,
+              "repeat": 26,
+              "input": {
+                "rel": 0.6,
+                "vef1": 60,
+                "mmrc": "2",
+                "exac": null,
+                "intern": 0,
+                "caat": 12,
+                "contexto": "1"
+              }
+            },
+            {
+              "first": 28,
+              "repeat": 32,
+              "input": {
+                "rel": 0.6,
+                "vef1": 60,
+                "mmrc": "2",
+                "exac": 1,
+                "intern": null,
+                "caat": 12,
+                "contexto": "1"
+              }
+            }
+          ],
+          "coverageStatusUnchanged": true
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "implementationHash": "332e7d7d1fee94890d17a1614cac1d1a59cec6070384496d1584d51dcbcecaa7",
+      "implementationHashScope": "Exact current calculator.js bytes, individually verified in three app mirrors. This is not a full dependency-closure hash.",
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-04T17:52:09.841Z",
+          "scope": "First standardized container; explicit existing methodVersion and source proof objects preserved.",
+          "priorStandardizedContainerPresent": false,
+          "priorImplementationVersion": null,
+          "explicitMethodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+          "sourceEvidenceSha256": "8d52e3f0ea4e5e723561b693c19ffeb47b897647b82b6181807e0ba00dde7210",
+          "metadataAudit": {
+            "file": "reports/review-20261003/native-technical-bindings-audit-publication-final26.json",
+            "sha256": "e615fa3a42555f8fbeb4de8763893c3e981a73eae4c8c1994b33727e19ebd8c8"
+          }
+        }
+      ]
+    },
+    "implementationVersion": "gold-dpoc@native-2026-10-04+332e7d7d1fee",
+    "limitsLocale": "pt-BR",
+    "mmrcPresentation": {
+      "mode": "previously-assessed-grade-only",
+      "input": "mmrc",
+      "values": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "questionnaireAdministered": false,
+      "sourceDescriptorsIncluded": false,
+      "authorship": "implementation-authored",
+      "professionalLanguageReview": "not-performed",
+      "clinicalApproval": "not-performed"
     }
   },
-  "review": {
-    "id": "gold-dpoc",
-    "reason": "Além de categorias GOLD, o código retorna 'Sem obstrução' diretamente a partir do limiar informado. A apresentação requer confirmação de contexto diagnóstico, qualidade da espirometria, versão da classificação e limites; suspender execução até revisão da saída. A referência importada é GOLD 2023, não um atestado de atualidade clínica.",
-    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/10066569/",
-    "sourceTitle": "GOLD 2023 — Executive Summary (publicação de referência importada)",
-    "sourceDate": "2023-04-03",
-    "publisherRegion": "Internacional",
-    "observedMain": [
-      "Sem obstrução",
-      "GOLD 1–4 / grupo A, B ou E"
-    ],
-    "status": "restricted",
-    "checkedAt": "2026-09-25",
-    "clinicalValidation": "not-performed",
-    "reviewScope": "Triagem da saída de software em casos fornecidos; identificação da publicação original e conferência limitada de seu contexto. Não é auditoria integral da regra, validação clínica ou revisão médica assinada.",
-    "implementationOutputAudit": "completed-on-supplied-cases",
-    "sourceReviewDepth": "original-reference-and-context-only",
-    "suppressLegacyFormula": true
+  "sourceToolSha256": "f5e04ddc00c9dff8499edfa08dc5cb50499236e6526263ee8c2958b9a7576fbe",
+  "omittedFullReferenceBanks": [
+    {
+      "at": "independentArithmeticTest.cases",
+      "rows": 40,
+      "sha256": "c37ea42120d89f95f92c3b9126709fc6c0d1a5d958ff9fc04075cdb00b76fdc5",
+      "reason": "Full independent reference bank omitted from standalone public candidate; original evidence references retained"
+    },
+    {
+      "at": "versionEvidence.independentArithmetic.cases",
+      "rows": 40,
+      "sha256": "c37ea42120d89f95f92c3b9126709fc6c0d1a5d958ff9fc04075cdb00b76fdc5",
+      "reason": "Embedded complete independent bank omitted; edition, scope and evidence references retained"
+    }
+  ],
+  "currentSource": {
+    "file": "apps/website/private/tool-code/gold-dpoc/calculator.js",
+    "bytes": 479,
+    "sha256": "332e7d7d1fee94890d17a1614cac1d1a59cec6070384496d1584d51dcbcecaa7"
   },
-  "clinicalValidation": "not-performed"
+  "clinicalValidation": "not-performed",
+  "professionalLanguageReview": "not-performed",
+  "sourceRightsApproval": "not-performed",
+  "presentationBinding": {
+    "file": "GOLD-PRIOR-GRADE-PRESENTATION.json",
+    "scope": "Previously assessed mmrc grade input only; arithmetic source receipt remains historical and unchanged; nested contract display labels sanitized without changing accepted values"
+  }
 }

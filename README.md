@@ -1,60 +1,37 @@
-# Classificação GOLD da DPOC
+# Classificação GOLD 2026
 
-Identificador: `gold-dpoc`. Pacote independente da plataforma ELUCENIA, para navegador e Node.js.
+ELUCENIA · Felipe Guedes. Local publication candidate prepared from the current per-tool source. No publication or deployment has been performed.
 
-## Situação
+## Documentation in ten languages
 
-- Revisão: **restricted**. Além de categorias GOLD, o código retorna 'Sem obstrução' diretamente a partir do limiar informado. A apresentação requer confirmação de contexto diagnóstico, qualidade da espirometria, versão da classificação e limites; suspender execução até revisão da saída. A referência importada é GOLD 2023, não um atestado de atualidade clínica.
-- Execução: **desativada; o adaptador retorna REVIEW_REQUIRED**.
-- Validação clínica independente: **não realizada**. Os testes abaixo verificam aritmética e transporte dos campos.
-- 5 casos de referência em `examples.json`, conferidos por `test.cjs`. Verificação aritmética independente da fórmula (reimplementação a partir da literatura, entradas aleatórias): **pendente**.
-- Dados: o exemplo funciona localmente, sem rede, armazenamento ou identificação de pacientes.
+- [Português (Brasil)](documentation/pt-BR.md) · [ELUCENIA](https://elucenia.org/pt-br/ferramentas/gold-dpoc)
+- [English](documentation/en.md) · [ELUCENIA](https://elucenia.org/en/tools/gold-dpoc)
+- [Español](documentation/es.md) · [ELUCENIA](https://elucenia.org/es/herramientas/gold-dpoc)
+- [Français](documentation/fr.md) · [ELUCENIA](https://elucenia.org/fr/outils/gold-dpoc)
+- [Deutsch](documentation/de.md) · [ELUCENIA](https://elucenia.org/de/werkzeuge/gold-dpoc)
+- [Italiano](documentation/it.md) · [ELUCENIA](https://elucenia.org/it/strumenti/gold-dpoc)
+- [العربية](documentation/ar.md) · [ELUCENIA](https://elucenia.org/ar/tools/gold-dpoc)
+- [中文](documentation/zh.md) · [ELUCENIA](https://elucenia.org/zh/tools/gold-dpoc)
+- [日本語](documentation/ja.md) · [ELUCENIA](https://elucenia.org/ja/tools/gold-dpoc)
+- [हिन्दी](documentation/hi.md) · [ELUCENIA](https://elucenia.org/hi/tools/gold-dpoc)
 
-## Uso no Node.js
+The README introduction is in English; the linked usage, field, method, limits, source and review documentation is available in each listed language. Bibliographic titles and schema identifiers retain their source identity.
 
-```js
-const { calculate } = require('./calculator.js');
-const example = require('./examples.json')[0];
-console.log(calculate(example.input));
-```
+## Run locally
 
-Execute `node test.cjs` (ou `npm test`) para conferir os exemplos. Abra `index.html` para usar a versão local do navegador. Não há dependências npm.
+Serve this directory with a static HTTP server and open index.html. The Node entry is calculator.js. Run node test.cjs to replay all 7 existing synthetic reference cases against the packaged current method. Calculation uses a fixed per-tool local module graph; it needs no API key, remote calculation service, app tree or database.
 
-## Contrato
+## Edition and evidence
 
-`calculate(input)` recebe um objeto, devolve `{id, main, label, raw, clinicalValidation}` ou `{error, code, field?}`. Consulte `tool.json` e `metadata.fields` para nomes, unidades, opções e intervalos. Números aceitam valores finitos ou strings numéricas; opções precisam corresponder às chaves documentadas. Campos obrigatórios vazios, booleanos inválidos, valores fora de intervalo e resultados não finitos são rejeitados. Somente checkbox omitido representa falso; um campo numérico ou uma opção obrigatória nunca é preenchido automaticamente.
+GOLD 2026 v1.3; classificação espirométrica e ABE inicial
 
-Interpretações, ordens terapêuticas e tabelas herdadas não são retornadas pelo adaptador. Classificações e valores ainda dependem da população e das limitações da fonte.
+examples.json contains current documented inputs/expected values. results.json records fresh source Node and packaged browser VM parity. evidence/http-reference-replay.json retains the corresponding completed HTTP replay against r5 build RYDdJbZxqrM8sgoyKEQc-. This is arithmetic and transport evidence; it is not full method/population, clinical or professional-language approval. The full independent bank is not included.
 
-## Fórmula / versão
+## License and attribution
 
-Expressão e contexto suspensos para revisão. Consulte a fonte.
+Existing payload notices and protected attribution references remain preserved. METHOD-CODE-LICENSE.txt and METHOD-CODE-NOTICE.md, when present, preserve the current integration package notices verbatim. publication-provenance.json identifies their exact sources and any historical Apache/current MIT declaration difference. No new instrument, questionnaire, table, translation, publication, data or trademark rights are granted. The candidate requires source-specific rights and fresh remote/protected-file review before distribution.
 
-A transcrição acima documenta o acervo de origem e pode requerer atualização. Revisão documental: https://pmc.ncbi.nlm.nih.gov/articles/10066569/
 
-## Condições e limites
+## Previously assessed mMRC grade
 
-Confirma a obstrução (VEF₁/CVF pós-broncodilatador < 0,70), gradua sua gravidade e define o grupo ABE, que orienta o tratamento farmacológico inicial.
-
-Confirme população, exclusões, unidades, versão e diretriz aplicável ao país e serviço. O resultado não deve ser utilizado isoladamente para diagnóstico, alta ou prescrição. O pacote não representa certificação clínica, aprovação regulatória ou indicação para toda população. Veja a revisão completa em `tool.json`.
-
-## Fontes originais
-
-- [Agustí A et al. Global Initiative for Chronic Obstructive Lung Disease 2023 Report: GOLD Executive Summary. Eur Respir J, 2023.](https://doi.org/10.1183/13993003.00239-2023)
-
-## Exemplos e rastreabilidade
-
-`examples.json` preserva `originalInput`, expectativa e entrada explícita do exemplo. Não foi necessário expandir opções zero nos exemplos.
-
-## O que esta ferramenta não faz
-
-- Não diagnostica, não prescreve e não substitui a avaliação de um médico. O resultado é a reprodução técnica de uma fórmula ou escore publicado.
-- Não envia dados a lugar nenhum: roda no navegador ou no Node.js, sem rede, sem telemetria, sem armazenamento.
-- Não guarda nem identifica pacientes. Não use com dados identificáveis fora de um ambiente que você controla.
-- Não tem validação clínica independente nem aprovação regulatória (ver "Situação").
-
-## Autoria e licença
-
-Criado e mantido por **Felipe Guedes** (Engenheiro de Software e Arquiteto de Sistemas, Toledo, Paraná, Brasil) para a **ELUCENIA**, uma cadeia médica e científica global para acelerar a descoberta. Criado em 2026-09-25 na organização [github.com/Elucenia](https://github.com/Elucenia).
-
-Licença **Apache-2.0** (arquivo `LICENSE`): você pode usar, copiar, modificar e embutir este código no seu site ou sistema, inclusive comercial, desde que mantenha o arquivo `NOTICE` e o aviso de copyright e declare as modificações. A licença cobre o código deste pacote; instrumentos, questionários, tabelas, traduções e marcas citados nas fontes mantêm os direitos dos seus titulares (ver `NOTICE`). Detalhes em `AUTHORSHIP.md`, `CITATION.cff`, `SECURITY.md` e `CONTRIBUTING.md`. Contato: contato@elucenia.org.
+This package accepts only a grade already assessed elsewhere, using numeric options 0, 1, 2, 3 and 4. It does not administer the mMRC questionnaire, reproduce its five descriptors or provide an official scale translation. The input key remains `mmrc`; the independent GOLD classification arithmetic is unchanged. See [the presentation binding](GOLD-PRIOR-GRADE-PRESENTATION.json).

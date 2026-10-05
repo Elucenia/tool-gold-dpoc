@@ -1,127 +1,338 @@
 [
   {
-    "label": "VEF₁/CVF 0,62, VEF₁ 65%, mMRC 1, sem exacerbações: GOLD 2, grupo A",
+    "id": "gold-dpoc",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Vetor sintético principal de referência",
+    "originalInput": {
+      "rel": 0.6,
+      "vef1": 60,
+      "mmrc": "2",
+      "exac": 1,
+      "intern": 0,
+      "caat": 12,
+      "contexto": "1"
+    },
     "input": {
-      "rel": 0.62,
-      "vef1": 65,
+      "rel": 0.6,
+      "vef1": 60,
+      "mmrc": "2",
+      "exac": 1,
+      "intern": 0,
+      "caat": 12,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "grade": 2,
+        "group": "E"
+      },
+      "main": "GOLD 2 / E"
+    },
+    "recordedResult": {
+      "main": [
+        "GOLD 2 / E",
+        ""
+      ],
+      "label": "GOLD 2026",
+      "raw": {
+        "grade": 2,
+        "group": "E",
+        "symptomMeasure": "mMRC + CAT/CAAT"
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "gold-dpoc",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "VEF1 80; mMRC1; nenhum evento; sem CAT",
+    "originalInput": {
+      "rel": 0.6,
+      "vef1": 80,
       "mmrc": "1",
       "exac": 0,
-      "intern": 0
+      "intern": 0,
+      "caat": null,
+      "contexto": "1"
     },
-    "expected": {
-      "raw": {
-        "gold": 2,
-        "grupo": "A"
-      },
-      "level": "low"
-    },
-    "originalInput": {
-      "rel": 0.62,
-      "vef1": 65,
+    "input": {
+      "rel": 0.6,
+      "vef1": 80,
       "mmrc": "1",
       "exac": 0,
-      "intern": 0
+      "intern": 0,
+      "caat": null,
+      "contexto": "1"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "VEF₁ 80% (limite): GOLD 1",
-    "input": {
-      "rel": 0.68,
-      "vef1": 80,
-      "mmrc": "0",
-      "exac": 0,
-      "intern": 0
-    },
+    "amendments": [],
     "expected": {
       "raw": {
-        "gold": 1,
-        "grupo": "A"
+        "grade": 1,
+        "group": "A"
       },
-      "level": "low"
+      "main": "GOLD 1 / A"
     },
-    "originalInput": {
-      "rel": 0.68,
-      "vef1": 80,
-      "mmrc": "0",
-      "exac": 0,
-      "intern": 0
-    },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "VEF₁ 45%, mMRC 3, 1 exacerbação: GOLD 3, grupo B",
-    "input": {
-      "rel": 0.55,
-      "vef1": 45,
-      "mmrc": "3",
-      "exac": 1,
-      "intern": 0
-    },
-    "expected": {
+    "recordedResult": {
+      "main": [
+        "GOLD 1 / A",
+        ""
+      ],
+      "label": "GOLD 2026",
       "raw": {
-        "gold": 3,
-        "grupo": "B"
-      },
-      "level": "mid"
+        "grade": 1,
+        "group": "A",
+        "symptomMeasure": "mMRC"
+      }
     },
-    "originalInput": {
-      "rel": 0.55,
-      "vef1": 45,
-      "mmrc": "3",
-      "exac": 1,
-      "intern": 0
-    },
-    "expandedZeroOptions": []
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   },
   {
-    "label": "VEF₁ 28%, mMRC 2, 1 internação: GOLD 4, grupo E",
-    "input": {
-      "rel": 0.45,
-      "vef1": 28,
+    "id": "gold-dpoc",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "VEF1 50; mMRC2; nenhum evento",
+    "originalInput": {
+      "rel": 0.6,
+      "vef1": 50,
       "mmrc": "2",
       "exac": 0,
-      "intern": 1
+      "intern": 0,
+      "caat": null,
+      "contexto": "1"
     },
-    "expected": {
-      "raw": {
-        "gold": 4,
-        "grupo": "E"
-      },
-      "level": "high"
-    },
-    "originalInput": {
-      "rel": 0.45,
-      "vef1": 28,
+    "input": {
+      "rel": 0.6,
+      "vef1": 50,
       "mmrc": "2",
       "exac": 0,
-      "intern": 1
+      "intern": 0,
+      "caat": null,
+      "contexto": "1"
     },
-    "expandedZeroOptions": []
-  },
-  {
-    "label": "VEF₁/CVF 0,72: sem obstrução",
-    "input": {
-      "rel": 0.72,
-      "vef1": 85,
-      "mmrc": "1",
-      "exac": 0,
-      "intern": 0
-    },
+    "amendments": [],
     "expected": {
       "raw": {
-        "gold": 0
+        "grade": 2,
+        "group": "B"
       },
-      "level": "low",
-      "verdict": "não confirma"
+      "main": "GOLD 2 / B"
     },
+    "recordedResult": {
+      "main": [
+        "GOLD 2 / B",
+        ""
+      ],
+      "label": "GOLD 2026",
+      "raw": {
+        "grade": 2,
+        "group": "B",
+        "symptomMeasure": "mMRC"
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "gold-dpoc",
+    "kind": "native-source-reference",
+    "index": 3,
+    "name": "VEF1 30; CAT10 classifica B com mMRC0",
     "originalInput": {
-      "rel": 0.72,
-      "vef1": 85,
+      "rel": 0.6,
+      "vef1": 30,
+      "mmrc": "0",
+      "exac": 0,
+      "intern": 0,
+      "caat": 10,
+      "contexto": "1"
+    },
+    "input": {
+      "rel": 0.6,
+      "vef1": 30,
+      "mmrc": "0",
+      "exac": 0,
+      "intern": 0,
+      "caat": 10,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "grade": 3,
+        "group": "B"
+      },
+      "main": "GOLD 3 / B"
+    },
+    "recordedResult": {
+      "main": [
+        "GOLD 3 / B",
+        ""
+      ],
+      "label": "GOLD 2026",
+      "raw": {
+        "grade": 3,
+        "group": "B",
+        "symptomMeasure": "mMRC + CAT/CAAT"
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "gold-dpoc",
+    "kind": "native-source-reference",
+    "index": 4,
+    "name": "VEF1 abaixo30; CAT9 e mMRC1",
+    "originalInput": {
+      "rel": 0.6,
+      "vef1": 29.9,
       "mmrc": "1",
       "exac": 0,
-      "intern": 0
+      "intern": 0,
+      "caat": 9,
+      "contexto": "1"
     },
-    "expandedZeroOptions": []
+    "input": {
+      "rel": 0.6,
+      "vef1": 29.9,
+      "mmrc": "1",
+      "exac": 0,
+      "intern": 0,
+      "caat": 9,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "grade": 4,
+        "group": "A"
+      },
+      "main": "GOLD 4 / A"
+    },
+    "recordedResult": {
+      "main": [
+        "GOLD 4 / A",
+        ""
+      ],
+      "label": "GOLD 2026",
+      "raw": {
+        "grade": 4,
+        "group": "A",
+        "symptomMeasure": "mMRC + CAT/CAAT"
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "gold-dpoc",
+    "kind": "native-source-reference",
+    "index": 5,
+    "name": "Um único evento moderado é E em 2026",
+    "originalInput": {
+      "rel": 0.6,
+      "vef1": 60,
+      "mmrc": "0",
+      "exac": 1,
+      "intern": 0,
+      "caat": 0,
+      "contexto": "1"
+    },
+    "input": {
+      "rel": 0.6,
+      "vef1": 60,
+      "mmrc": "0",
+      "exac": 1,
+      "intern": 0,
+      "caat": 0,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "grade": 2,
+        "group": "E"
+      },
+      "main": "GOLD 2 / E"
+    },
+    "recordedResult": {
+      "main": [
+        "GOLD 2 / E",
+        ""
+      ],
+      "label": "GOLD 2026",
+      "raw": {
+        "grade": 2,
+        "group": "E",
+        "symptomMeasure": "mMRC + CAT/CAAT"
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
+  },
+  {
+    "id": "gold-dpoc",
+    "kind": "native-source-reference",
+    "index": 6,
+    "name": "Um evento grave é E independentemente dos sintomas",
+    "originalInput": {
+      "rel": 0.6,
+      "vef1": 60,
+      "mmrc": "0",
+      "exac": 0,
+      "intern": 1,
+      "caat": 0,
+      "contexto": "1"
+    },
+    "input": {
+      "rel": 0.6,
+      "vef1": 60,
+      "mmrc": "0",
+      "exac": 0,
+      "intern": 1,
+      "caat": 0,
+      "contexto": "1"
+    },
+    "amendments": [],
+    "expected": {
+      "raw": {
+        "grade": 2,
+        "group": "E"
+      },
+      "main": "GOLD 2 / E"
+    },
+    "recordedResult": {
+      "main": [
+        "GOLD 2 / E",
+        ""
+      ],
+      "label": "GOLD 2026",
+      "raw": {
+        "grade": 2,
+        "group": "E",
+        "symptomMeasure": "mMRC + CAT/CAAT"
+      }
+    },
+    "provenance": {
+      "receiptSha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7",
+      "scope": "Existing documented synthetic reference and precise source-audit regression baseline; no new independent oracle"
+    }
   }
 ]

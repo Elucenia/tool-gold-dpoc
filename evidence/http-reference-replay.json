@@ -1,0 +1,1653 @@
+{
+  "receipt": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "build": {
+    "id": "RYDdJbZxqrM8sgoyKEQc-",
+    "standaloneServer": {
+      "file": "reports/review-20261005-completion/deploy-lock/r5-isolated-runtime/.next/standalone/server.js",
+      "sha256": "631d43264038e7aa367b5405041eb3706d73fd3366925a7ef17a07119cfa166e",
+      "bytes": 10457
+    },
+    "catalogPin": {
+      "file": "deliveries/elucenia-next-hostinger-r5/.next/server/pages/en/tools.json",
+      "sha256": "33917dfdae9bea59cae22bfca34eaef2a21046a832af98c1a8d2718075de63ec",
+      "bytes": 103793
+    }
+  },
+  "scope": {
+    "syntheticDataOnly": true,
+    "applicationModuleImports": 0,
+    "browserInteractions": 0,
+    "newIndependentOracles": 0,
+    "nativeSourceReferenceCases": 882,
+    "additionalDecimalCases": 4,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "populationValidation": false,
+    "hostingerDeploymentVerified": false,
+    "actualHTTPExecution": true,
+    "standaloneNodeServer": true,
+    "nodeVersion": "v22.18.0",
+    "noNewClinicalOrProfessionalApproval": true,
+    "pubmedResourceIsNotCalculatorAndNotIncludedIn222": true,
+    "description": "All 882 existing reference cases across the 218 native calculators plus four existing Decimal50 examples, executed via HTTP against the final local r5 standalone build. Raw precise source-audit comparisons are transport regressions, not independent clinical or full-method validation."
+  },
+  "tool": {
+    "id": "gold-dpoc",
+    "title": "Classificação GOLD 2026",
+    "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+    "implementationVersion": "gold-dpoc@native-2026-10-04+332e7d7d1fee",
+    "sources": [
+      [
+        "GOLD · relatório 2026 v1.3",
+        "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf"
+      ],
+      [
+        "Agustí A et al. Global Initiative for Chronic Obstructive Lung Disease 2023 Report: GOLD Executive Summary. Eur Respir J, 2023.",
+        "https://doi.org/10.1183/13993003.00239-2023"
+      ]
+    ],
+    "limits": "Esta edição classifica avaliação inicial. Não representa o algoritmo de seguimento nem prescreve medicamentos. Valores limítrofes e qualidade do exame exigem conferência clínica.",
+    "sourceEditionEvidence": [
+      {
+        "citation": "GOLD · relatório 2026 v1.3",
+        "url": "https://goldcopd.org/wp-content/uploads/2026/01/GOLD-REPORT-2026-v1.3-8Dec2025_WMV2.pdf",
+        "class": "existing-source-record-transcribed",
+        "declaredCitationPreserved": true,
+        "sourceIdentityRecheckedInThisNormalization": false,
+        "publicationEditionConfirmationInThisNormalization": "not-performed",
+        "fullTextRetrievalInThisNormalization": false,
+        "formulaConformance": "not-assessed"
+      },
+      {
+        "citation": "Agustí A et al. Global Initiative for Chronic Obstructive Lung Disease 2023 Report: GOLD Executive Summary. Eur Respir J, 2023.",
+        "url": "https://doi.org/10.1183/13993003.00239-2023",
+        "class": "existing-source-record-transcribed",
+        "declaredCitationPreserved": true,
+        "sourceIdentityRecheckedInThisNormalization": false,
+        "publicationEditionConfirmationInThisNormalization": "not-performed",
+        "fullTextRetrievalInThisNormalization": false,
+        "formulaConformance": "not-assessed"
+      }
+    ],
+    "calculator": {
+      "file": "deliveries/elucenia-next-hostinger-r5/private/tool-code/gold-dpoc/calculator.js",
+      "sha256": "332e7d7d1fee94890d17a1614cac1d1a59cec6070384496d1584d51dcbcecaa7",
+      "bytes": 479
+    },
+    "cases": 7,
+    "clinicalApproval": false,
+    "professionalLanguageApproval": false,
+    "replayed": 7,
+    "passed": 7,
+    "failed": 0,
+    "status": "passed"
+  },
+  "results": [
+    {
+      "id": "gold-dpoc",
+      "kind": "native-source-reference",
+      "index": 0,
+      "name": "Vetor sintético principal de referência",
+      "originalInput": {
+        "rel": 0.6,
+        "vef1": 60,
+        "mmrc": "2",
+        "exac": 1,
+        "intern": 0,
+        "caat": 12,
+        "contexto": "1"
+      },
+      "input": {
+        "rel": 0.6,
+        "vef1": 60,
+        "mmrc": "2",
+        "exac": 1,
+        "intern": 0,
+        "caat": 12,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "grade": 2,
+          "group": "E"
+        },
+        "main": "GOLD 2 / E"
+      },
+      "recordedResult": {
+        "main": [
+          "GOLD 2 / E",
+          ""
+        ],
+        "label": "GOLD 2026",
+        "raw": {
+          "grade": 2,
+          "group": "E",
+          "symptomMeasure": "mMRC + CAT/CAAT"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "rel": 0.6,
+            "vef1": 60,
+            "mmrc": "2",
+            "exac": 1,
+            "intern": 0,
+            "caat": 12,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+          "startedAt": "2026-10-05T15:13:04.814Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gold-dpoc",
+              "main": [
+                "GOLD 2 / E",
+                ""
+              ],
+              "label": "GOLD 2026",
+              "raw": {
+                "grade": 2,
+                "group": "E",
+                "symptomMeasure": "mMRC + CAT/CAAT"
+              },
+              "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "be16b3eb0feb846177f0a1132f90903cedb175535ae5cd392c2c0821162816a9",
+          "bytes": 255,
+          "elapsedMs": 2.5263000000013562
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "startedAt": "2026-10-05T15:13:04.814Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gold-dpoc",
+            "main": [
+              "GOLD 2 / E",
+              ""
+            ],
+            "label": "GOLD 2026",
+            "raw": {
+              "grade": 2,
+              "group": "E",
+              "symptomMeasure": "mMRC + CAT/CAAT"
+            },
+            "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "be16b3eb0feb846177f0a1132f90903cedb175535ae5cd392c2c0821162816a9",
+        "bytes": 255,
+        "elapsedMs": 2.5263000000013562
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "GOLD 2 / E",
+            "obtained": "GOLD 2 / E",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.group",
+            "expected": "E",
+            "obtained": "E",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.group",
+            "expected": "E",
+            "obtained": "E",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.symptomMeasure",
+            "expected": "mMRC + CAT/CAAT",
+            "obtained": "mMRC + CAT/CAAT",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "GOLD 2 / E",
+            "obtained": "GOLD 2 / E",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gold-dpoc",
+      "kind": "native-source-reference",
+      "index": 1,
+      "name": "VEF1 80; mMRC1; nenhum evento; sem CAT",
+      "originalInput": {
+        "rel": 0.6,
+        "vef1": 80,
+        "mmrc": "1",
+        "exac": 0,
+        "intern": 0,
+        "caat": null,
+        "contexto": "1"
+      },
+      "input": {
+        "rel": 0.6,
+        "vef1": 80,
+        "mmrc": "1",
+        "exac": 0,
+        "intern": 0,
+        "caat": null,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "grade": 1,
+          "group": "A"
+        },
+        "main": "GOLD 1 / A"
+      },
+      "recordedResult": {
+        "main": [
+          "GOLD 1 / A",
+          ""
+        ],
+        "label": "GOLD 2026",
+        "raw": {
+          "grade": 1,
+          "group": "A",
+          "symptomMeasure": "mMRC"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "rel": 0.6,
+            "vef1": 80,
+            "mmrc": "1",
+            "exac": 0,
+            "intern": 0,
+            "caat": null,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+          "startedAt": "2026-10-05T15:13:05.127Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gold-dpoc",
+              "main": [
+                "GOLD 1 / A",
+                ""
+              ],
+              "label": "GOLD 2026",
+              "raw": {
+                "grade": 1,
+                "group": "A",
+                "symptomMeasure": "mMRC"
+              },
+              "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "5b5923a8986c4e2949094e343c0dea34364a7b59d2bd86e68a74370eb75ec2a0",
+          "bytes": 244,
+          "elapsedMs": 2.2483999999967637
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "startedAt": "2026-10-05T15:13:05.127Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gold-dpoc",
+            "main": [
+              "GOLD 1 / A",
+              ""
+            ],
+            "label": "GOLD 2026",
+            "raw": {
+              "grade": 1,
+              "group": "A",
+              "symptomMeasure": "mMRC"
+            },
+            "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "5b5923a8986c4e2949094e343c0dea34364a7b59d2bd86e68a74370eb75ec2a0",
+        "bytes": 244,
+        "elapsedMs": 2.2483999999967637
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "GOLD 1 / A",
+            "obtained": "GOLD 1 / A",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.group",
+            "expected": "A",
+            "obtained": "A",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 1,
+            "obtained": 1,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.group",
+            "expected": "A",
+            "obtained": "A",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.symptomMeasure",
+            "expected": "mMRC",
+            "obtained": "mMRC",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "GOLD 1 / A",
+            "obtained": "GOLD 1 / A",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gold-dpoc",
+      "kind": "native-source-reference",
+      "index": 2,
+      "name": "VEF1 50; mMRC2; nenhum evento",
+      "originalInput": {
+        "rel": 0.6,
+        "vef1": 50,
+        "mmrc": "2",
+        "exac": 0,
+        "intern": 0,
+        "caat": null,
+        "contexto": "1"
+      },
+      "input": {
+        "rel": 0.6,
+        "vef1": 50,
+        "mmrc": "2",
+        "exac": 0,
+        "intern": 0,
+        "caat": null,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "grade": 2,
+          "group": "B"
+        },
+        "main": "GOLD 2 / B"
+      },
+      "recordedResult": {
+        "main": [
+          "GOLD 2 / B",
+          ""
+        ],
+        "label": "GOLD 2026",
+        "raw": {
+          "grade": 2,
+          "group": "B",
+          "symptomMeasure": "mMRC"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "rel": 0.6,
+            "vef1": 50,
+            "mmrc": "2",
+            "exac": 0,
+            "intern": 0,
+            "caat": null,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+          "startedAt": "2026-10-05T15:13:05.440Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gold-dpoc",
+              "main": [
+                "GOLD 2 / B",
+                ""
+              ],
+              "label": "GOLD 2026",
+              "raw": {
+                "grade": 2,
+                "group": "B",
+                "symptomMeasure": "mMRC"
+              },
+              "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "9cabf3c1838dbadcef7835d549e8f96a5d4402f38095e9dc91c444ad5a2a8959",
+          "bytes": 244,
+          "elapsedMs": 2.598099999999249
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "startedAt": "2026-10-05T15:13:05.440Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gold-dpoc",
+            "main": [
+              "GOLD 2 / B",
+              ""
+            ],
+            "label": "GOLD 2026",
+            "raw": {
+              "grade": 2,
+              "group": "B",
+              "symptomMeasure": "mMRC"
+            },
+            "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "9cabf3c1838dbadcef7835d549e8f96a5d4402f38095e9dc91c444ad5a2a8959",
+        "bytes": 244,
+        "elapsedMs": 2.598099999999249
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "GOLD 2 / B",
+            "obtained": "GOLD 2 / B",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.group",
+            "expected": "B",
+            "obtained": "B",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.group",
+            "expected": "B",
+            "obtained": "B",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.symptomMeasure",
+            "expected": "mMRC",
+            "obtained": "mMRC",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "GOLD 2 / B",
+            "obtained": "GOLD 2 / B",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gold-dpoc",
+      "kind": "native-source-reference",
+      "index": 3,
+      "name": "VEF1 30; CAT10 classifica B com mMRC0",
+      "originalInput": {
+        "rel": 0.6,
+        "vef1": 30,
+        "mmrc": "0",
+        "exac": 0,
+        "intern": 0,
+        "caat": 10,
+        "contexto": "1"
+      },
+      "input": {
+        "rel": 0.6,
+        "vef1": 30,
+        "mmrc": "0",
+        "exac": 0,
+        "intern": 0,
+        "caat": 10,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "grade": 3,
+          "group": "B"
+        },
+        "main": "GOLD 3 / B"
+      },
+      "recordedResult": {
+        "main": [
+          "GOLD 3 / B",
+          ""
+        ],
+        "label": "GOLD 2026",
+        "raw": {
+          "grade": 3,
+          "group": "B",
+          "symptomMeasure": "mMRC + CAT/CAAT"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "rel": 0.6,
+            "vef1": 30,
+            "mmrc": "0",
+            "exac": 0,
+            "intern": 0,
+            "caat": 10,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+          "startedAt": "2026-10-05T15:13:05.753Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gold-dpoc",
+              "main": [
+                "GOLD 3 / B",
+                ""
+              ],
+              "label": "GOLD 2026",
+              "raw": {
+                "grade": 3,
+                "group": "B",
+                "symptomMeasure": "mMRC + CAT/CAAT"
+              },
+              "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "60fac682d05ccef4fd95dc5dad525b064f0a8a8a1d4b3d8307c0fd6e251ca540",
+          "bytes": 255,
+          "elapsedMs": 2.145600000003469
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "startedAt": "2026-10-05T15:13:05.753Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gold-dpoc",
+            "main": [
+              "GOLD 3 / B",
+              ""
+            ],
+            "label": "GOLD 2026",
+            "raw": {
+              "grade": 3,
+              "group": "B",
+              "symptomMeasure": "mMRC + CAT/CAAT"
+            },
+            "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "60fac682d05ccef4fd95dc5dad525b064f0a8a8a1d4b3d8307c0fd6e251ca540",
+        "bytes": 255,
+        "elapsedMs": 2.145600000003469
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "GOLD 3 / B",
+            "obtained": "GOLD 3 / B",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.group",
+            "expected": "B",
+            "obtained": "B",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 3,
+            "obtained": 3,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.group",
+            "expected": "B",
+            "obtained": "B",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.symptomMeasure",
+            "expected": "mMRC + CAT/CAAT",
+            "obtained": "mMRC + CAT/CAAT",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "GOLD 3 / B",
+            "obtained": "GOLD 3 / B",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gold-dpoc",
+      "kind": "native-source-reference",
+      "index": 4,
+      "name": "VEF1 abaixo30; CAT9 e mMRC1",
+      "originalInput": {
+        "rel": 0.6,
+        "vef1": 29.9,
+        "mmrc": "1",
+        "exac": 0,
+        "intern": 0,
+        "caat": 9,
+        "contexto": "1"
+      },
+      "input": {
+        "rel": 0.6,
+        "vef1": 29.9,
+        "mmrc": "1",
+        "exac": 0,
+        "intern": 0,
+        "caat": 9,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "grade": 4,
+          "group": "A"
+        },
+        "main": "GOLD 4 / A"
+      },
+      "recordedResult": {
+        "main": [
+          "GOLD 4 / A",
+          ""
+        ],
+        "label": "GOLD 2026",
+        "raw": {
+          "grade": 4,
+          "group": "A",
+          "symptomMeasure": "mMRC + CAT/CAAT"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "rel": 0.6,
+            "vef1": 29.9,
+            "mmrc": "1",
+            "exac": 0,
+            "intern": 0,
+            "caat": 9,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+          "startedAt": "2026-10-05T15:13:06.066Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gold-dpoc",
+              "main": [
+                "GOLD 4 / A",
+                ""
+              ],
+              "label": "GOLD 2026",
+              "raw": {
+                "grade": 4,
+                "group": "A",
+                "symptomMeasure": "mMRC + CAT/CAAT"
+              },
+              "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "2bb5676029a55b0796bd46fb7ee48494dd25804ef76a1f7dd469778cfccae8ac",
+          "bytes": 255,
+          "elapsedMs": 2.507400000002235
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "startedAt": "2026-10-05T15:13:06.066Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gold-dpoc",
+            "main": [
+              "GOLD 4 / A",
+              ""
+            ],
+            "label": "GOLD 2026",
+            "raw": {
+              "grade": 4,
+              "group": "A",
+              "symptomMeasure": "mMRC + CAT/CAAT"
+            },
+            "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "2bb5676029a55b0796bd46fb7ee48494dd25804ef76a1f7dd469778cfccae8ac",
+        "bytes": 255,
+        "elapsedMs": 2.507400000002235
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "GOLD 4 / A",
+            "obtained": "GOLD 4 / A",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.group",
+            "expected": "A",
+            "obtained": "A",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 4,
+            "obtained": 4,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.group",
+            "expected": "A",
+            "obtained": "A",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.symptomMeasure",
+            "expected": "mMRC + CAT/CAAT",
+            "obtained": "mMRC + CAT/CAAT",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "GOLD 4 / A",
+            "obtained": "GOLD 4 / A",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gold-dpoc",
+      "kind": "native-source-reference",
+      "index": 5,
+      "name": "Um único evento moderado é E em 2026",
+      "originalInput": {
+        "rel": 0.6,
+        "vef1": 60,
+        "mmrc": "0",
+        "exac": 1,
+        "intern": 0,
+        "caat": 0,
+        "contexto": "1"
+      },
+      "input": {
+        "rel": 0.6,
+        "vef1": 60,
+        "mmrc": "0",
+        "exac": 1,
+        "intern": 0,
+        "caat": 0,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "grade": 2,
+          "group": "E"
+        },
+        "main": "GOLD 2 / E"
+      },
+      "recordedResult": {
+        "main": [
+          "GOLD 2 / E",
+          ""
+        ],
+        "label": "GOLD 2026",
+        "raw": {
+          "grade": 2,
+          "group": "E",
+          "symptomMeasure": "mMRC + CAT/CAAT"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "rel": 0.6,
+            "vef1": 60,
+            "mmrc": "0",
+            "exac": 1,
+            "intern": 0,
+            "caat": 0,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+          "startedAt": "2026-10-05T15:13:06.378Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gold-dpoc",
+              "main": [
+                "GOLD 2 / E",
+                ""
+              ],
+              "label": "GOLD 2026",
+              "raw": {
+                "grade": 2,
+                "group": "E",
+                "symptomMeasure": "mMRC + CAT/CAAT"
+              },
+              "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "be16b3eb0feb846177f0a1132f90903cedb175535ae5cd392c2c0821162816a9",
+          "bytes": 255,
+          "elapsedMs": 3.2845999999990454
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "startedAt": "2026-10-05T15:13:06.378Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gold-dpoc",
+            "main": [
+              "GOLD 2 / E",
+              ""
+            ],
+            "label": "GOLD 2026",
+            "raw": {
+              "grade": 2,
+              "group": "E",
+              "symptomMeasure": "mMRC + CAT/CAAT"
+            },
+            "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "be16b3eb0feb846177f0a1132f90903cedb175535ae5cd392c2c0821162816a9",
+        "bytes": 255,
+        "elapsedMs": 3.2845999999990454
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "GOLD 2 / E",
+            "obtained": "GOLD 2 / E",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.group",
+            "expected": "E",
+            "obtained": "E",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.group",
+            "expected": "E",
+            "obtained": "E",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.symptomMeasure",
+            "expected": "mMRC + CAT/CAAT",
+            "obtained": "mMRC + CAT/CAAT",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "GOLD 2 / E",
+            "obtained": "GOLD 2 / E",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    },
+    {
+      "id": "gold-dpoc",
+      "kind": "native-source-reference",
+      "index": 6,
+      "name": "Um evento grave é E independentemente dos sintomas",
+      "originalInput": {
+        "rel": 0.6,
+        "vef1": 60,
+        "mmrc": "0",
+        "exac": 0,
+        "intern": 1,
+        "caat": 0,
+        "contexto": "1"
+      },
+      "input": {
+        "rel": 0.6,
+        "vef1": 60,
+        "mmrc": "0",
+        "exac": 0,
+        "intern": 1,
+        "caat": 0,
+        "contexto": "1"
+      },
+      "amendments": [],
+      "expected": {
+        "raw": {
+          "grade": 2,
+          "group": "E"
+        },
+        "main": "GOLD 2 / E"
+      },
+      "recordedResult": {
+        "main": [
+          "GOLD 2 / E",
+          ""
+        ],
+        "label": "GOLD 2026",
+        "raw": {
+          "grade": 2,
+          "group": "E",
+          "symptomMeasure": "mMRC + CAT/CAAT"
+        }
+      },
+      "provenance": {
+        "bank": {
+          "file": "reports/review-20261003/source-cases-audit.json",
+          "sha256": "da6d27d65bcaed56528da83bd0ffaa3d407fc467ea7f9cb67ec40a1a78c6febf",
+          "bytes": 885399
+        },
+        "canonical": {
+          "file": "deliveries/elucenia-next-hostinger-r5/private/canonical-medical-tools.json",
+          "sha256": "988c58b5409ecc0df7e05193d88c7df930af9ce187b0688534a31f6d627ee4ad",
+          "bytes": 29045565
+        },
+        "scope": "Existing recorded source expectations and precise source-audit transport baseline; no newly derived independent oracle"
+      },
+      "request": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "origin": "http://127.0.0.1:3062",
+        "payload": {
+          "input": {
+            "rel": 0.6,
+            "vef1": 60,
+            "mmrc": "0",
+            "exac": 0,
+            "intern": 1,
+            "caat": 0,
+            "contexto": "1"
+          }
+        }
+      },
+      "attempts": [
+        {
+          "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+          "startedAt": "2026-10-05T15:13:06.689Z",
+          "status": 200,
+          "headers": {
+            "contentType": "application/json; charset=utf-8",
+            "retryAfter": null,
+            "cacheControl": "no-store",
+            "nosniff": "nosniff"
+          },
+          "body": {
+            "result": {
+              "id": "gold-dpoc",
+              "main": [
+                "GOLD 2 / E",
+                ""
+              ],
+              "label": "GOLD 2026",
+              "raw": {
+                "grade": 2,
+                "group": "E",
+                "symptomMeasure": "mMRC + CAT/CAAT"
+              },
+              "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+              "clinicalValidation": "not-performed"
+            }
+          },
+          "responseSha256": "be16b3eb0feb846177f0a1132f90903cedb175535ae5cd392c2c0821162816a9",
+          "bytes": 255,
+          "elapsedMs": 2.4307000000007974
+        }
+      ],
+      "observed": {
+        "url": "http://127.0.0.1:3062/api/tools/gold-dpoc/calculate",
+        "startedAt": "2026-10-05T15:13:06.689Z",
+        "status": 200,
+        "headers": {
+          "contentType": "application/json; charset=utf-8",
+          "retryAfter": null,
+          "cacheControl": "no-store",
+          "nosniff": "nosniff"
+        },
+        "body": {
+          "result": {
+            "id": "gold-dpoc",
+            "main": [
+              "GOLD 2 / E",
+              ""
+            ],
+            "label": "GOLD 2026",
+            "raw": {
+              "grade": 2,
+              "group": "E",
+              "symptomMeasure": "mMRC + CAT/CAAT"
+            },
+            "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+            "clinicalValidation": "not-performed"
+          }
+        },
+        "responseSha256": "be16b3eb0feb846177f0a1132f90903cedb175535ae5cd392c2c0821162816a9",
+        "bytes": 255,
+        "elapsedMs": 2.4307000000007974
+      },
+      "evaluation": {
+        "checks": [
+          {
+            "at": "status",
+            "expected": 200,
+            "obtained": 200,
+            "passed": true
+          },
+          {
+            "at": "result-object",
+            "expected": true,
+            "obtained": true,
+            "passed": true
+          },
+          {
+            "at": "result.main",
+            "expected": "GOLD 2 / E",
+            "obtained": "GOLD 2 / E",
+            "scope": "Recorded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-8,
+            "difference": 0,
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "result.raw.group",
+            "expected": "E",
+            "obtained": "E",
+            "scope": "Recorded rounded source reference",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.grade",
+            "expected": 2,
+            "obtained": 2,
+            "tolerance": 1e-10,
+            "difference": 0,
+            "scope": "Existing precise source-audit transport regression, not independent formula validation",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.group",
+            "expected": "E",
+            "obtained": "E",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.raw.symptomMeasure",
+            "expected": "mMRC + CAT/CAAT",
+            "obtained": "mMRC + CAT/CAAT",
+            "scope": "Existing source-audit transport regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main.length",
+            "expected": 2,
+            "obtained": 2,
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[0]",
+            "expected": "GOLD 2 / E",
+            "obtained": "GOLD 2 / E",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          },
+          {
+            "at": "regression.result.main[1]",
+            "expected": "",
+            "obtained": "",
+            "scope": "Existing source-audit public representation regression",
+            "passed": true
+          }
+        ],
+        "notCompared": []
+      },
+      "status": "passed",
+      "error": null
+    }
+  ],
+  "endBindings": true
+}

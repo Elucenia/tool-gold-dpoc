@@ -1,0 +1,270 @@
+{
+  "schema": "elucenia-current-per-tool-local-publication-candidate",
+  "id": "gold-dpoc",
+  "repository": "Elucenia/tool-gold-dpoc",
+  "parentCommitSha": "f2d05f3a223d33d314b1fdd22b38a98774450e3b",
+  "baseTreeSha": "dd54ff25a0f401755514e89cc129b7ab2605ce32",
+  "protectedFiles": {
+    "LICENSE": {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+      "size": 11358,
+      "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+    },
+    "NOTICE": {
+      "path": "NOTICE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f4a63121806d6a90c2cbcd21a7ea3d62b44e4b7",
+      "size": 1608,
+      "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/9f4a63121806d6a90c2cbcd21a7ea3d62b44e4b7"
+    },
+    "AUTHORSHIP.md": {
+      "path": "AUTHORSHIP.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1749ea421378d6331276a4f674b90fc58d42297d",
+      "size": 3265,
+      "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/1749ea421378d6331276a4f674b90fc58d42297d"
+    },
+    "CITATION.cff": {
+      "path": "CITATION.cff",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e33b13b9a6d056c7769078108bdb5d49c08fe989",
+      "size": 888,
+      "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/e33b13b9a6d056c7769078108bdb5d49c08fe989"
+    },
+    "SECURITY.md": {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+      "size": 894,
+      "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+    },
+    "CONTRIBUTING.md": {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6f0f626599273afeb0f2f3226908222e128cd59",
+      "size": 1460,
+      "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/d6f0f626599273afeb0f2f3226908222e128cd59"
+    },
+    ".github/workflows/ci.yml": {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+      "size": 279,
+      "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+    },
+    ".gitattributes": {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+      "size": 19,
+      "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+    },
+    ".gitignore": {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+      "size": 42,
+      "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+    }
+  },
+  "oldCandidate": {
+    "manifest": {
+      "file": "reports/review-20261003/github-publication-candidate-final36-v4.json",
+      "bytes": 6823260,
+      "sha256": "a3c528b12d7b5416fa0e62dda9e5106864bae7ff86710fa765934b5a3069e16c"
+    },
+    "rowId": "gold-dpoc",
+    "publicationProvenance": {
+      "file": "reports/review-20261003/github-publication-candidates-final36-v4/gold-dpoc/publication-provenance.json",
+      "bytes": 5137,
+      "sha256": "67a5067f7369220815e99ca666be66d6ecdd08bc29f9be5bee0d307a5479ed53"
+    },
+    "integrationProvenance": {
+      "file": "reports/review-20261003/github-publication-candidates-final36-v4/gold-dpoc/provenance.json",
+      "bytes": 60186,
+      "sha256": "f6c0f3833238d9e5b06fce49042c3eab4a81f97be9a92c35b1b88b295713df11"
+    }
+  },
+  "currentSource": {
+    "file": "apps/website/private/tool-code/gold-dpoc/calculator.js",
+    "bytes": 479,
+    "sha256": "332e7d7d1fee94890d17a1614cac1d1a59cec6070384496d1584d51dcbcecaa7"
+  },
+  "sourceToolSha256": "f5e04ddc00c9dff8499edfa08dc5cb50499236e6526263ee8c2958b9a7576fbe",
+  "methodVersion": "GOLD 2026 v1.3; classificação espirométrica e ABE inicial",
+  "implementationVersion": "gold-dpoc@native-2026-10-04+332e7d7d1fee",
+  "browserBundleSha256": "ecce4118557aae997fe6d1b01aba8065c40cbc8c34dead3aa1b5710508551b67",
+  "graph": {
+    "entry": "tool-code/gold-dpoc/calculator.js",
+    "modules": [
+      {
+        "file": "tool-code/gold-dpoc/calculator.js",
+        "bytes": 479,
+        "sha256": "332e7d7d1fee94890d17a1614cac1d1a59cec6070384496d1584d51dcbcecaa7"
+      },
+      {
+        "file": "restored-methods.cjs",
+        "bytes": 5207,
+        "sha256": "c08d44cedcaa219b1617d6afc1b2b73d0fa745c7c28e613f853b55722f90bcf4"
+      },
+      {
+        "file": "restoration-original-tools.json",
+        "bytes": 1622,
+        "sha256": "0b863a6ceb489f7854156998cdf15c2a1d2629c20d6a65cd561033cebfdf06da"
+      }
+    ],
+    "transforms": [
+      {
+        "file": "restored-methods.cjs",
+        "sourceSha256": "630dccade18742e4bc364b32f4ef4d6bc75aeceb262face8ddae806be7962c23",
+        "kind": "Deterministic AST selection of one existing define call plus unchanged shared arithmetic/schema helpers",
+        "selectedId": "gold-dpoc",
+        "otherMethodDefinitionsIncluded": 0
+      },
+      {
+        "file": "restoration-original-tools.json",
+        "sourceSha256": "ccee00665e024104d254acf77a43609acb02d593e016ee8c6b7cebf3769da389",
+        "kind": "One original field/source contract only; no other tools, reference banks or original results",
+        "selectedId": "gold-dpoc",
+        "keys": [
+          "id",
+          "title",
+          "fields",
+          "sources"
+        ]
+      }
+    ]
+  },
+  "currentActualHttpEvidence": {
+    "file": "reports/review-20261005-completion/deploy-lock/r5-all-calculators-http-results.json",
+    "bytes": 7105457,
+    "sha256": "be450b3731f8b30a13e0b36bf1f2f579bce00de325c5622bc3e526235c1c79f7"
+  },
+  "tests": {
+    "cases": 7,
+    "sourceNodeParityPassed": true,
+    "browserVmParityPassed": true,
+    "independentOracleDerived": false,
+    "actualBrowserDOMVerified": false
+  },
+  "rights": {
+    "historicalPayloadLicenseDeclaration": "Apache-2.0",
+    "currentIntegrationPackageLicenseDeclaration": "MIT",
+    "currentLegalFiles": [
+      {
+        "file": "apps/command-center/private/tool-code/gold-dpoc/LICENSE",
+        "bytes": 1229,
+        "sha256": "51c010d285894558695812b9883d9c9ae7c9c89526f43597917e778965e65d93"
+      },
+      {
+        "file": "apps/command-center/private/tool-code/gold-dpoc/NOTICE.md",
+        "bytes": 1183,
+        "sha256": "b7d5eaa1074d1673caf885ac49b38e9b54b2c6086b45072eacf7b3fe139d8a6d"
+      }
+    ],
+    "protectedFilesPreservedFromOldPayload": [],
+    "protectedRemoteAttributionReferences": {
+      "LICENSE": {
+        "path": "LICENSE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d645695673349e3947e8e5ae42332d0ac3164cd7",
+        "size": 11358,
+        "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/d645695673349e3947e8e5ae42332d0ac3164cd7"
+      },
+      "NOTICE": {
+        "path": "NOTICE",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9f4a63121806d6a90c2cbcd21a7ea3d62b44e4b7",
+        "size": 1608,
+        "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/9f4a63121806d6a90c2cbcd21a7ea3d62b44e4b7"
+      },
+      "AUTHORSHIP.md": {
+        "path": "AUTHORSHIP.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "1749ea421378d6331276a4f674b90fc58d42297d",
+        "size": 3265,
+        "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/1749ea421378d6331276a4f674b90fc58d42297d"
+      },
+      "CITATION.cff": {
+        "path": "CITATION.cff",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e33b13b9a6d056c7769078108bdb5d49c08fe989",
+        "size": 888,
+        "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/e33b13b9a6d056c7769078108bdb5d49c08fe989"
+      },
+      "SECURITY.md": {
+        "path": "SECURITY.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "44eafb996937916cbe53e24fa9c5208fe03d5767",
+        "size": 894,
+        "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/44eafb996937916cbe53e24fa9c5208fe03d5767"
+      },
+      "CONTRIBUTING.md": {
+        "path": "CONTRIBUTING.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "d6f0f626599273afeb0f2f3226908222e128cd59",
+        "size": 1460,
+        "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/d6f0f626599273afeb0f2f3226908222e128cd59"
+      },
+      ".github/workflows/ci.yml": {
+        "path": ".github/workflows/ci.yml",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "7d3f2f34aa2e948d30695d82d64361467d9e6485",
+        "size": 279,
+        "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/7d3f2f34aa2e948d30695d82d64361467d9e6485"
+      },
+      ".gitattributes": {
+        "path": ".gitattributes",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6313b56c57848efce05faa7aa7e901ccfc2886ea",
+        "size": 19,
+        "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/6313b56c57848efce05faa7aa7e901ccfc2886ea"
+      },
+      ".gitignore": {
+        "path": ".gitignore",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e375bd25cf1a574310ac4c7af0299884556e81e1",
+        "size": 42,
+        "url": "https://api.github.com/repos/Elucenia/tool-gold-dpoc/git/blobs/e375bd25cf1a574310ac4c7af0299884556e81e1"
+      }
+    },
+    "sourceSpecificEvidence": {
+      "sourceSpecificStatus": "not-approved-by-this-consolidation",
+      "sourceSpecificEvidence": null,
+      "wholeInstrumentApproval": false,
+      "oldCandidateInstrumentRightsApproval": "not-performed"
+    },
+    "scope": "Historical Apache declaration and current MIT integration notices retained with exact sources; no relicensing or instrument approval inferred",
+    "reviewRequired": true,
+    "divergences": [
+      "Historical payload and current package declare different license labels; scope/authorship mapping must be reviewed before distribution"
+    ],
+    "wholeInstrumentApproval": false
+  },
+  "appWrites": false,
+  "externalMutations": false,
+  "publicationPerformed": false,
+  "externalPublicationReady": false,
+  "clinicalApproval": false,
+  "professionalLanguageApproval": false
+}
